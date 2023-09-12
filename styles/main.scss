@@ -1,0 +1,338 @@
+@import url(fonts.css);
+*{
+    box-sizing: border-box;
+    font-family: 'Hauora-400';
+    margin: 0;
+    padding: 0;
+    color: #000000;
+
+
+}
+
+ul,ol,li{
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+.wrapper{
+    main{
+        background: url(../images/main_car.jpg)  no-repeat;
+        background-size: cover;
+        width: 100vw;
+        height: 95vh;
+        .top__header{
+            background: linear-gradient(to right, #000,#190d58 , #000);
+            height: 5vh;
+
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            gap: 40px;
+            .discount p{
+                font-family: Hauora-300;
+                font-size: 14xpx;
+                color: #FFFFFF;
+            }
+            a.btn{
+                text-transform: uppercase;
+                color: #bbb8b8;
+                font-size: 18px;
+            }
+        }
+        .header{
+
+            background-color: #FFFFFF;
+            width: 100%;
+            height: 12vh;
+            display: flex;
+            align-items: center;
+            padding: 0 20px;
+            
+            .container{
+                max-width: 1760px;
+                margin: 0 auto;
+                display: flex;
+                align-items: center;
+                display: flex;
+                gap: 12vw;
+                
+                .header__logo img{
+                    display: flex;
+                    justify-content: start;
+
+                }
+                .header__nav{
+                    display: flex;
+                    justify-content: center;
+                    ul{
+                        display: flex;
+                        gap: 60px;
+                        li{
+                            font-size: 18px;
+                            font-family: Hauora-500;
+                        }
+                    }
+                }
+                .header__btns{
+                    display: flex;
+                    align-items: center;
+                    .btn{
+                        background-color: #2A1A80;
+                        padding: 18px 32px;
+                        border-radius: 6px 6px 18px 6px;
+
+                        min-width: 200px;
+
+                        font-size: 16px;
+                        color: #FFFFFF;
+                    }
+
+                }
+            }
+        }
+        .hero{
+            display: flex;
+            padding: 50px 20px;
+            .container{
+                max-width: 1760px;
+                margin: 0 auto;
+                .hero__text{
+                    h1{
+                        font-size: 135px;
+                        color: #FFFFFF;
+                        max-width: 60%;
+                        line-height: 100%;
+                    }
+                }
+                .hero__bottom{
+                    display: flex;
+                    flex-direction: row;
+                    align-items: end;
+                    justify-content: space-around;
+                    width: 100%;
+                    .buttons{
+                        margin-top: 33vh;
+                        display: flex;
+                        gap: 40px;
+                        a.order{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            width: 338px;
+                            height: 18px;
+                            font-size: 16px;
+
+                            padding: 32px 18px;
+                            border-radius: 6px 6px 18px 6px;
+
+                            background: #FFFFFF;
+                            color: #000000;
+
+                            
+                        }
+                        a.consultation{
+                            background-color: rgba(28,28,28,0);
+                            color: #FFFFFF;
+
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            width: 338px;
+                            height: 24px;
+                            font-size: 16px;
+                            
+                            padding: 32px 24px;
+                            border-radius: 6px 6px 18px 6px;
+                            border: #FFFFFF 1px solid;
+                        }
+                    }
+                    .text{
+                        margin-left: 30vw;
+                        p{
+                            font-size: 28px;
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+            }
+        }
+        .section__about-us{
+            display: flex;
+            margin-top: 20vh;
+            padding: 0 20px;
+            .container{
+                max-width: 1760px;
+                margin: 0 auto;
+                display: flex;
+                flex-direction: row;
+                .left__menu{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 50%;
+                    .information{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10%;
+                        .about__logo{
+                            font-size: 80px;
+                            line-height: 100%;
+                            width: 100%;
+                            
+
+                        }
+                        .text__about{
+                            font-family: Hauora-400;
+                            
+                            font-size: 18px;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 20px;
+                            width: 35%;
+                            span{
+                                font-family: Hauora-600;
+                            }
+
+
+        
+                        }
+                    }
+                    .mini__logo{
+                        width: 189px;
+                        height: 105px;
+                    }
+                }
+                .right__menu{
+                    margin-top: 16%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 100px;
+                    .top-side{
+                        display: flex;
+                        
+                        .right__menu-content{
+                            img{
+                                width: 96px;
+                                height: 96px;
+                            }
+                            h3{
+                                font-size: 28px;
+                            }
+                            p{
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                    .bottom-side{
+                        display: flex;
+                        .right__menu-content{
+                            img{
+                                width: 96px;
+                                height: 96px;
+                            }
+                            h3{
+                                font-size: 28px;
+                            }
+                            p{
+                                font-size: 20px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .advantages{
+            margin-top: 30vh;
+            background:rgb(17, 14, 44);
+            .container{
+                max-width: 1760px;
+                margin: 0 auto;
+
+                display: flex;
+                flex-direction: row;
+
+                .advantages-left__side{
+                    min-width: 50%;
+                    
+                    display: flex;
+                    flex-direction: column;
+                    gap: 40vh;
+                    .adv__header{
+                        margin-top: 10vh;
+                        h3{
+                            color: #fFFFFF;
+                            font-size: 18px;
+                            text-transform: uppercase;
+                            font-weight: 300;
+                        }
+                        h1{
+                            font-size: 80px;
+                            color: #FFFFFF;
+                            width: 90%;
+                            line-height: 100%;
+                        }
+
+                    }
+                    .text__btn{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 5vh;
+                        p{
+                            color: #fFFFFF;
+                            font-size: 24px;
+                            max-width: 60%;
+                        }
+                        a{
+                            background-color: rgba(28,28,28,0);
+                            color: #FFFFFF;
+
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            width: 338px;
+                            height: 24px;
+                            font-size: 16px;
+                            
+                            padding: 32px 24px;
+                            border-radius: 6px 6px 18px 6px;
+                            border: #FFFFFF 1px solid;
+                        }
+                    }
+                }
+                .advantages__right-side{
+                    width: 100%;
+
+                    display: flex;
+                    flex-direction: column;
+                    .player{
+                        img{
+                            width: 100%;
+                        }
+                    }
+                    .bottom-side{
+                        width: 100%;
+                        height: 100%;
+
+                        background: #FFFFFF;
+                        h1{
+                            color: #2A1A80;
+                            font-size: 48px;
+                        }
+                        ul{
+                            list-style-type:circle;
+                            display: flex;
+                            
+                        }
+
+                    }
+                }
+            }
+        }
+    }
+}

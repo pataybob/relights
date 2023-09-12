@@ -1,0 +1,20 @@
+@font-face {
+    font-family: Hauora-300;
+    src: url(../fonts/Hauora-Light.otf);
+}
+
+
+@font-face {
+    font-family: Hauora-400;
+    src: url( ../fonts/Hauora-Regular.otf);
+}
+
+@font-face {
+    font-family: Hauora-500;
+    src: url(../fonts/Hauora-Medium.otf);
+}
+
+@font-face {
+    font-family: Hauora-600;
+    src: url(../fonts/Hauora-SemiBold.otf);
+}
