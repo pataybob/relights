@@ -277,7 +277,12 @@ a {
   display: flex;
   flex-direction: column;
 }
+.wrapper main .advantages .container .advantages__right-side .player {
+  position: relative;
+  margin: 0 -80px 0 0;
+}
 .wrapper main .advantages .container .advantages__right-side .player img {
+  display: block;
   width: 100%;
 }
 .wrapper main .advantages .container .advantages__right-side .bottom-side {

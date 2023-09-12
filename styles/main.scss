@@ -314,7 +314,10 @@ a{
                     display: flex;
                     flex-direction: column;
                     .player{
+                        position: relative;
+                        margin:0 -80px 0 0;
                         img{
+                        display: block;
                             width: 100%;
                         }
                     }
@@ -344,13 +347,8 @@ a{
                                 color: #000000;
                                 font-weight: 300;
 
-                            }
-                            
-                                                
-                                                
-                            
+                            }     
                         }
-
                     }
                 }
             }
