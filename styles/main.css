@@ -164,9 +164,9 @@ a {
   gap: 10%;
 }
 .wrapper main .section__about-us .container .left__menu .information .about__logo {
-  font-size: 80px;
+  font-size: 84px;
   line-height: 100%;
-  width: 100%;
+  width: 150%;
 }
 .wrapper main .section__about-us .container .left__menu .information .text__about {
   font-family: Hauora-400;
@@ -185,84 +185,79 @@ a {
 }
 .wrapper main .section__about-us .container .right__menu {
   margin-top: 16%;
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-areas: "a a";
   gap: 100px;
 }
-.wrapper main .section__about-us .container .right__menu .top-side {
-  display: flex;
-}
-.wrapper main .section__about-us .container .right__menu .top-side .right__menu-content img {
+.wrapper main .section__about-us .container .right__menu .right__menu-content img {
   width: 96px;
   height: 96px;
 }
-.wrapper main .section__about-us .container .right__menu .top-side .right__menu-content h3 {
+.wrapper main .section__about-us .container .right__menu .right__menu-content h3 {
   font-size: 28px;
 }
-.wrapper main .section__about-us .container .right__menu .top-side .right__menu-content p {
+.wrapper main .section__about-us .container .right__menu .right__menu-content p {
   font-size: 20px;
 }
-.wrapper main .section__about-us .container .right__menu .bottom-side {
-  display: flex;
-}
-.wrapper main .section__about-us .container .right__menu .bottom-side .right__menu-content img {
+.wrapper main .section__about-us .container .right__menu-content img {
   width: 96px;
   height: 96px;
 }
-.wrapper main .section__about-us .container .right__menu .bottom-side .right__menu-content h3 {
+.wrapper main .section__about-us .container .right__menu-content h3 {
   font-size: 28px;
 }
-.wrapper main .section__about-us .container .right__menu .bottom-side .right__menu-content p {
+.wrapper main .section__about-us .container .right__menu-content p {
   font-size: 20px;
 }
-.wrapper main .advantages {
+
+.advantages {
   margin-top: 30vh;
   background: rgb(17, 14, 44);
   display: flex;
   flex-direction: row;
 }
-.wrapper main .advantages .container-left {
+.advantages .container-left {
   max-width: 1000px;
   width: 100%;
   padding: 0 80px;
   display: flex;
   flex-direction: row;
 }
-.wrapper main .advantages .container-left .advantages-left__side {
+.advantages .container-left .advantages-left__side {
   min-width: 100%;
   display: flex;
   flex-direction: column;
   gap: 40vh;
 }
-.wrapper main .advantages .container-left .advantages-left__side .adv__header {
+.advantages .container-left .advantages-left__side .adv__header {
   display: flex;
   flex-direction: column;
   gap: 40px;
   margin-top: 8vh;
 }
-.wrapper main .advantages .container-left .advantages-left__side .adv__header h3 {
+.advantages .container-left .advantages-left__side .adv__header h3 {
   color: #fFFFFF;
   font-size: 18px;
   text-transform: uppercase;
   font-weight: 300;
 }
-.wrapper main .advantages .container-left .advantages-left__side .adv__header h1 {
+.advantages .container-left .advantages-left__side .adv__header h1 {
   font-size: 80px;
   color: #FFFFFF;
   width: 90%;
   line-height: 100%;
 }
-.wrapper main .advantages .container-left .advantages-left__side .text__btn {
+.advantages .container-left .advantages-left__side .text__btn {
   display: flex;
   flex-direction: column;
   gap: 5vh;
 }
-.wrapper main .advantages .container-left .advantages-left__side .text__btn p {
+.advantages .container-left .advantages-left__side .text__btn p {
   color: #fFFFFF;
   font-size: 24px;
   max-width: 60%;
 }
-.wrapper main .advantages .container-left .advantages-left__side .text__btn a {
+.advantages .container-left .advantages-left__side .text__btn a {
   background-color: rgba(28, 28, 28, 0);
   color: #FFFFFF;
   display: flex;
@@ -275,19 +270,19 @@ a {
   border-radius: 6px 6px 18px 6px;
   border: #FFFFFF 1px solid;
 }
-.wrapper main .advantages .advantages__right-side {
+.advantages .advantages__right-side {
   width: 100%;
   display: flex;
   flex-direction: column;
 }
-.wrapper main .advantages .advantages__right-side .player {
+.advantages .advantages__right-side .player {
   height: 50%;
 }
-.wrapper main .advantages .advantages__right-side .player img {
+.advantages .advantages__right-side .player img {
   width: 100%;
   height: 100%;
 }
-.wrapper main .advantages .advantages__right-side .bottom-side {
+.advantages .advantages__right-side .bottom-side {
   width: 100%;
   height: 100%;
   display: flex;
@@ -296,11 +291,11 @@ a {
   padding: 50px 50px;
   background: #FFFFFF;
 }
-.wrapper main .advantages .advantages__right-side .bottom-side h1 {
+.advantages .advantages__right-side .bottom-side h1 {
   color: #2A1A80;
   font-size: 44px;
 }
-.wrapper main .advantages .advantages__right-side .bottom-side ul {
+.advantages .advantages__right-side .bottom-side ul {
   margin-left: 30px;
   list-style-type: circle;
   display: grid;
@@ -308,7 +303,7 @@ a {
   grid-column-end: auto;
   gap: 40px;
 }
-.wrapper main .advantages .advantages__right-side .bottom-side ul li {
+.advantages .advantages__right-side .bottom-side ul li {
   font-size: 20px;
   list-style-type: disc;
   color: #000000;
