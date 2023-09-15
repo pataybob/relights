@@ -334,30 +334,47 @@ a {
 .guarantee .container .guarantee__bottom {
   margin-top: 15vh;
 }
-.guarantee .container .guarantee__bottom .top__side {
-  display: flex;
+.guarantee .container .guarantee__bottom .grid__mesh-top {
+  display: grid;
+  grid-template-areas: " a b b ";
+  grid-column-end: auto;
+  align-items: center;
 }
-.guarantee .container .guarantee__bottom .top__side .recomended h3 {
+.guarantee .container .guarantee__bottom .grid__mesh-top .recomended-top p {
   color: #bbb8b8;
+  font-size: 20px;
+  max-width: 40%;
+  text-transform: uppercase;
 }
-.guarantee .container .guarantee__bottom .top__side .item__container {
-  display: flex;
-  flex-direction: row;
-  gap: 50px;
-}
-.guarantee .container .guarantee__bottom .top__side .item__container .guarantee__item {
+.guarantee .container .guarantee__bottom .grid__mesh-top .grid__item {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  position: relative;
 }
-.guarantee .container .guarantee__bottom .top__side .item__container .guarantee__item .before {
-  color: #000000;
-  display: block;
-  content: "";
+.guarantee .container .guarantee__bottom .grid__mesh-top .grid__item .before {
+  position: relative;
 }
-.guarantee .container .guarantee__bottom .top__side .item__container .guarantee__item .before::before {
+.guarantee .container .guarantee__bottom .grid__mesh-top .grid__item .before::before {
   content: "";
-  display: block;
-  width: 200px;
-  height: 10px;
   background: #000000;
+  width: 325px;
+  height: 2px;
+  position: absolute;
+}
+.guarantee .container .guarantee__bottom .grid__mesh-top .grid__item p {
+  max-width: 80%;
+  font-size: 18px;
+  font-weight: 300;
+}
+.guarantee .container .guarantee__bottom .grid__mesh-bottom {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  gap: 50%;
+}
+.guarantee .container .guarantee__bottom .grid__mesh-bottom .recomended p {
+  color: #bbb8b8;
+  line-height: 62.4px;
+  font-size: 44px;
 }/*# sourceMappingURL=main.css.map */

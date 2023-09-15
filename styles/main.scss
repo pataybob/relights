@@ -372,35 +372,60 @@ a{
             }
             .guarantee__bottom{
                 margin-top: 15vh;
-                .top__side{
-                    display: flex;
-                    .recomended{
-                        h3{
+                
+                .grid__mesh-top{
+                    display: grid;
+                    grid-template-areas: " a b b ";
+                    grid-column-end: auto;
+                    align-items: center;
+                    .recomended-top{
+                        p{
                             color: #bbb8b8;
+                            font-size: 20px;
+                            max-width: 40%;
+                            text-transform: uppercase;
                         }
                     }
-                    .item__container{
+                    .grid__item{
                         display: flex;
-                        flex-direction: row;
-                        gap: 50px ;
-                        .guarantee__item{
-                            display: flex;
-                            flex-direction: column;
-                            .before{
-                                color: #000000;
-                                display: block;
+                        flex-direction: column;
+                        gap: 20px;
+                        position: relative;
+                        .before{
+                            position: relative;
+                            &::before{
                                 content: "";
-                                &::before{
-                                    content: "";
-                                    display: block;
-                                    width: 200px;
-                                    height: 10px;
-                                    background: #000000;
-
-                                }
+                                background: #000000;
+                                width: 325px;
+                                height: 2px;
+                                position: absolute;
                             }
                         }
+                        h2{
+
+                        }
+                        p{
+                            max-width: 80%;
+                            font-size: 18px;
+                            font-weight: 300;
+                        }
                     }
+                }
+                .grid__mesh-bottom{
+                    margin-top: 100px;
+                    display: flex;
+                    flex-direction: row;
+                    gap: 50%;
+                    .grid__item{
+                        
+                    }
+                    .recomended{
+                        p{
+                            color: #bbb8b8;
+                            line-height: 62.4px;
+                            font-size: 44px;
+                        }        
+                }
             }
         }
     }
