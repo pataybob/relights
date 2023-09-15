@@ -58,7 +58,7 @@ a{
                 display: flex;
                 align-items: center;
                 display: flex;
-                gap: 12vw;
+                gap: 10vw;
                 
                 .header__logo img{
                     display: flex;
@@ -255,15 +255,17 @@ a{
                 flex-direction: row;
 
                 .advantages-left__side{
+
                     min-width: 100%;
                     display: flex;
                     flex-direction: column;
                     gap: 40vh;
+                    padding-bottom: 50px;
                     .adv__header{
                         display: flex;
                         flex-direction: column;
                         gap: 40px;
-                        margin-top: 8vh;
+                        margin-top: 5vh;
                         h3{
                             color: #fFFFFF;
                             font-size: 18px;
@@ -350,3 +352,56 @@ a{
                 }
             }
         }
+    .guarantee{
+        margin-top: 10vh;
+        .container{
+            max-width: 1760px;
+            margin: 0 auto;
+            .guarantee_main{
+                display: flex;
+                justify-content: space-between;
+                h1{
+                    line-height: 100%;
+                    font-size: 86px;
+                    max-width: 60%;
+                }
+                img{
+                    width: 71px ;
+                    height: 40px;
+                }
+            }
+            .guarantee__bottom{
+                margin-top: 15vh;
+                .top__side{
+                    display: flex;
+                    .recomended{
+                        h3{
+                            color: #bbb8b8;
+                        }
+                    }
+                    .item__container{
+                        display: flex;
+                        flex-direction: row;
+                        gap: 50px ;
+                        .guarantee__item{
+                            display: flex;
+                            flex-direction: column;
+                            .before{
+                                color: #000000;
+                                display: block;
+                                content: "";
+                                &::before{
+                                    content: "";
+                                    display: block;
+                                    width: 200px;
+                                    height: 10px;
+                                    background: #000000;
+
+                                }
+                            }
+                        }
+                    }
+            }
+        }
+    }
+}
