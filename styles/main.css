@@ -482,9 +482,12 @@ a {
 .items .container .photo__side {
   max-width: 960px;
   width: 100%;
+  height: 100%;
 }
 .items .container .content__side {
   background: rgb(17, 14, 44);
+  max-width: 960px;
+  height: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -534,4 +537,95 @@ a {
   display: flex;
   flex-direction: row;
   gap: 20px;
+}
+
+.car__motorcycle {
+  margin-top: 5vh;
+}
+.car__motorcycle .container {
+  max-width: 1760px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+}
+.car__motorcycle .container .car {
+  background: url(../images/car.png);
+  width: 850px;
+  height: 630px;
+  padding: 70px 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+}
+.car__motorcycle .container .car h1 {
+  font-size: 86px;
+  line-height: 96px;
+  letter-spacing: -3%;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+.car__motorcycle .container .car p {
+  font-size: 28px;
+  line-height: 41.6px;
+  letter-spacing: -2%;
+  font-weight: 400;
+  color: #FFFFFF;
+  max-width: 70%;
+}
+.car__motorcycle .container .car .btn {
+  margin-top: 30%;
+  background-color: #FFFFFF;
+  padding: 18px 32px;
+  border-radius: 6px 6px 18px 6px;
+  font-size: 16px;
+  color: #2A1A80;
+  max-width: 302px;
+  text-align: center;
+}
+.car__motorcycle .container .motorcycle {
+  background: url(../images/motorcycle.png);
+  width: 850px;
+  height: 630px;
+  padding: 70px 90px;
+  display: flex;
+  flex-direction: column;
+  gap: 5%;
+}
+.car__motorcycle .container .motorcycle h1 {
+  font-size: 86px;
+  line-height: 96px;
+  letter-spacing: -3%;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+.car__motorcycle .container .motorcycle p {
+  font-size: 28px;
+  line-height: 41.6px;
+  letter-spacing: -2%;
+  font-weight: 400;
+  color: #FFFFFF;
+  max-width: 100%;
+}
+.car__motorcycle .container .motorcycle .btn {
+  margin-top: 30%;
+  background-color: #FFFFFF;
+  padding: 18px 32px;
+  border-radius: 6px 6px 18px 6px;
+  font-size: 16px;
+  color: #2A1A80;
+  max-width: 302px;
+  text-align: center;
+}
+
+.about__ramki {
+  margin-top: 20vh;
+}
+.about__ramki .container {
+  max-width: 1760px;
+  margin: 0 auto;
+}
+.about__ramki .container .header__text {
+  font-size: 86px;
+  color: #000000;
+  max-width: 70%;
 }/*# sourceMappingURL=main.css.map */
