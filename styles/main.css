@@ -621,6 +621,7 @@ a {
   margin-top: 15vh;
 }
 .about__ramki .container {
+  padding: 0px 20px;
   max-width: 1760px;
   margin: 0 auto;
 }
@@ -629,41 +630,215 @@ a {
   color: #000000;
   max-width: 70%;
 }
-.about__ramki .container .end {
-  margin-top: 15vh;
-}
 .about__ramki .container .grid__mesh {
+  margin-top: 10vh;
   display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
-.about__ramki .container .grid__mesh .grid__container__1 {
-  display: flex;
-  flex-direction: row;
-  gap: 50px;
-}
-.about__ramki .container .grid__mesh .grid__container__1 .grid__item {
+.about__ramki .container .grid__mesh .grid__container-text {
   display: flex;
   flex-direction: column;
+  gap: 20px;
+  max-width: 55%;
+  grid-column: 1/2;
+  grid-row: 1/3;
 }
-.about__ramki .container .grid__mesh .grid__container__1 .grid__item .before {
+.about__ramki .container .grid__mesh .grid__container-text p {
+  font-size: 22px;
+}
+.about__ramki .container .grid__mesh .grid__container-1 {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.about__ramki .container .grid__mesh .grid__container-1 .before {
   position: relative;
 }
-.about__ramki .container .grid__mesh .grid__container__1 .grid__item .before::before {
+.about__ramki .container .grid__mesh .grid__container-1 .before::before {
   content: "";
-  height: 2px;
+  height: 3px;
   background: #000000;
   text-align: center;
   display: inline-block;
-  width: 25%;
+  width: 90%;
 }
-.about__ramki .container .grid__mesh .grid__container__1 .grid__item h3 {
-  font-size: 22px;
-  max-width: 20%;
+.about__ramki .container .grid__mesh .grid__container-1 .text {
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
-.about__ramki .container .grid__mesh .grid__container__1 .grid__item p {
+.about__ramki .container .grid__mesh .grid__container-1 .text h3 {
+  font-weight: 400;
+  font-size: 24px;
+  max-width: 70%;
+  align-items: center;
+}
+.about__ramki .container .grid__mesh .grid__container-1 .text p {
   color: #bbb8b8;
   font-size: 16px;
-  max-width: 20%;
+  max-width: 80%;
 }
-.about__ramki .container .grid__mesh .grid__container__1 .grid__item p::before {
+.about__ramki .container .grid__mesh .grid__container-1 .text p::before {
   content: "-";
+}
+.about__ramki .container .grid__mesh .grid__container-2 {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+.about__ramki .container .grid__mesh .grid__container-2 .before {
+  position: relative;
+}
+.about__ramki .container .grid__mesh .grid__container-2 .before::before {
+  content: "";
+  height: 3px;
+  background: #000000;
+  text-align: center;
+  display: inline-block;
+  width: 90%;
+}
+.about__ramki .container .grid__mesh .grid__container-2 .text {
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.about__ramki .container .grid__mesh .grid__container-2 .text h3 {
+  font-weight: 400;
+  font-size: 24px;
+  max-width: 100%;
+  align-items: center;
+}
+.about__ramki .container .grid__mesh .grid__container-2 .text p {
+  color: #bbb8b8;
+  font-size: 16px;
+  max-width: 70%;
+}
+.about__ramki .container .grid__mesh .grid__container-2 .text p::before {
+  content: "-";
+}
+.about__ramki .container .grid__mesh .grid__container-3 {
+  grid-row: 2/3;
+  grid-column: 3/3;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+.about__ramki .container .grid__mesh .grid__container-3 .before {
+  position: relative;
+}
+.about__ramki .container .grid__mesh .grid__container-3 .before::before {
+  content: "";
+  height: 3px;
+  background: #000000;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+.about__ramki .container .grid__mesh .grid__container-3 .text {
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.about__ramki .container .grid__mesh .grid__container-3 .text h3 {
+  font-weight: 400;
+  font-size: 24px;
+  max-width: 100%;
+  align-items: center;
+}
+.about__ramki .container .grid__mesh .grid__container-3 .text p {
+  color: #bbb8b8;
+  font-size: 16px;
+  max-width: 80%;
+}
+.about__ramki .container .grid__mesh .grid__container-3 .text p::before {
+  content: "-";
+}
+.about__ramki .container .grid__mesh .grid__container-4 {
+  grid-column: 1/3;
+  grid-row: 3/3;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+.about__ramki .container .grid__mesh .grid__container-4 .before {
+  position: relative;
+}
+.about__ramki .container .grid__mesh .grid__container-4 .before::before {
+  content: "";
+  height: 3px;
+  background: #000000;
+  text-align: center;
+  display: inline-block;
+  width: 60%;
+}
+.about__ramki .container .grid__mesh .grid__container-4 .text {
+  padding: 20px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.about__ramki .container .grid__mesh .grid__container-4 .text h3 {
+  font-weight: 400;
+  font-size: 32px;
+  max-width: 50%;
+  align-items: center;
+  color: #99A8BF;
+}
+.about__ramki .container .grid__mesh .grid__container-4 .text p {
+  color: #99A8BF;
+  font-size: 22px;
+  max-width: 50%;
+}
+.about__ramki .container .grid__mesh .grid__container-4 .text p::before {
+  content: "-";
+}
+.about__ramki .container .grid__mesh .grid__container-5 {
+  grid-column: 3/3;
+  grid-row: 3/3;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+}
+.about__ramki .container .grid__mesh .grid__container-5 .before {
+  position: relative;
+}
+.about__ramki .container .grid__mesh .grid__container-5 .before::before {
+  content: "";
+  height: 3px;
+  background: #000000;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+.about__ramki .container .grid__mesh .grid__container-5 .text {
+  padding: 20px 50px;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.about__ramki .container .grid__mesh .grid__container-5 .text h3 {
+  font-weight: 400;
+  font-size: 24px;
+  max-width: 100%;
+  align-items: center;
+}
+.about__ramki .container .grid__mesh .grid__container-5 .text p {
+  color: #bbb8b8;
+  font-size: 16px;
+  max-width: 60%;
+}
+.about__ramki .container .grid__mesh .grid__container-5 .text p::before {
+  content: "-";
+}
+.about__ramki .end {
+  margin-top: 15vh;
 }/*# sourceMappingURL=main.css.map */
