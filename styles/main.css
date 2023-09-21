@@ -43,7 +43,7 @@ a {
 .wrapper main .header {
   background-color: #FFFFFF;
   width: 100%;
-  height: 12vh;
+  height: 100px;
   display: flex;
   align-items: center;
   padding: 0 20px;
@@ -86,7 +86,7 @@ a {
 }
 .wrapper main .hero {
   display: flex;
-  padding: 50px 20px;
+  padding: 50px 0 20px;
 }
 .wrapper main .hero .container {
   max-width: 1760px;
@@ -99,6 +99,7 @@ a {
   line-height: 100%;
 }
 .wrapper main .hero .container .hero__bottom {
+  position: relative;
   display: flex;
   flex-direction: row;
   align-items: end;
@@ -106,7 +107,7 @@ a {
   width: 100%;
 }
 .wrapper main .hero .container .hero__bottom .buttons {
-  margin-top: 24%;
+  margin-top: 400px;
   display: flex;
   gap: 40px;
 }
@@ -144,7 +145,7 @@ a {
 }
 .wrapper main .section__about-us {
   display: flex;
-  margin-top: 20vh;
+  margin-top: 15vh;
   padding: 0 20px;
 }
 .wrapper main .section__about-us .container {
@@ -169,12 +170,13 @@ a {
   width: 150%;
 }
 .wrapper main .section__about-us .container .left__menu .information .text__about {
+  margin-top: 10%;
   font-family: Hauora-400;
-  font-size: 18px;
+  font-size: 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
-  width: 35%;
+  width: 45%;
 }
 .wrapper main .section__about-us .container .left__menu .information .text__about span {
   font-family: Hauora-600;
@@ -312,6 +314,7 @@ a {
 }
 
 .guarantee {
+  padding: 0 20px;
   margin-top: 10vh;
 }
 .guarantee .container {
@@ -334,47 +337,137 @@ a {
 .guarantee .container .guarantee__bottom {
   margin-top: 15vh;
 }
-.guarantee .container .guarantee__bottom .top__side {
-  display: flex;
-  flex-direction: row;
+.guarantee .container .guarantee__bottom .guarantee__grid {
+  grid-gap: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
-.guarantee .container .guarantee__bottom .top__side .recomended h3 {
+.guarantee .container .guarantee__bottom .guarantee__grid .recomended-grid-1 {
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+.guarantee .container .guarantee__bottom .guarantee__grid .recomended-grid-1 h3 {
+  margin-top: 10px;
   color: #bbb8b8;
+  font-size: 18px;
+  max-width: 40%;
   text-transform: uppercase;
-  max-width: 60%;
   font-weight: 400;
 }
-.guarantee .container .guarantee__bottom .top__side .item__container {
-  display: flex;
-  flex-direction: row;
-  gap: 50px;
-}
-.guarantee .container .guarantee__bottom .top__side .item__container .guarantee__item {
+.guarantee .container .guarantee__bottom .guarantee__grid .guarantee__item-grid-2 {
+  grid-column: 2/3;
+  grid-row: 1/2;
   display: flex;
   flex-direction: column;
-  max-width: 30%;
+  width: 100%;
+  gap: 30px;
 }
-.guarantee .container .guarantee__bottom .top__side .item__container .guarantee__item .before {
+.guarantee .container .guarantee__bottom .guarantee__grid .guarantee__item-grid-2 .before {
   position: relative;
-  display: inline-block;
 }
-.guarantee .container .guarantee__bottom .top__side .item__container .guarantee__item .before::before {
+.guarantee .container .guarantee__bottom .guarantee__grid .guarantee__item-grid-2 .before::before {
   content: "";
+  height: 3px;
   background: #000000;
-  width: 300px;
-  height: 2px;
-  position: absolute;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+.guarantee .container .guarantee__bottom .guarantee__grid .guarantee__item-grid-2 h2 {
+  font-weight: 500;
+  font-size: 30px;
+}
+.guarantee .container .guarantee__bottom .guarantee__grid .guarantee__item-grid-2 p {
+  font-size: 20px;
+}
+.guarantee .container .guarantee__bottom .guarantee__grid .guarantee__item-grid-3 {
+  grid-column: 3/3;
+  grid-row: 1/2;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 30px;
+}
+.guarantee .container .guarantee__bottom .guarantee__grid .guarantee__item-grid-3 .before {
+  position: relative;
+}
+.guarantee .container .guarantee__bottom .guarantee__grid .guarantee__item-grid-3 .before::before {
+  content: "";
+  height: 3px;
+  background: #000000;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+.guarantee .container .guarantee__bottom .guarantee__grid .guarantee__item-grid-3 h2 {
+  font-weight: 500;
+  font-size: 30px;
+}
+.guarantee .container .guarantee__bottom .guarantee__grid .guarantee__item-grid-3 p {
+  font-size: 20px;
+}
+.guarantee .container .guarantee__bottom .guarantee__grid .guarantee__item-grid-4 {
+  grid-column: 1/2;
+  grid-row: 2/2;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 30px;
+}
+.guarantee .container .guarantee__bottom .guarantee__grid .guarantee__item-grid-4 .before {
+  position: relative;
+}
+.guarantee .container .guarantee__bottom .guarantee__grid .guarantee__item-grid-4 .before::before {
+  content: "";
+  height: 3px;
+  background: #000000;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+.guarantee .container .guarantee__bottom .guarantee__grid .guarantee__item-grid-4 h2 {
+  font-weight: 500;
+  font-size: 30px;
+}
+.guarantee .container .guarantee__bottom .guarantee__grid .guarantee__item-grid-4 p {
+  font-size: 20px;
+}
+.guarantee .container .guarantee__bottom .guarantee__grid .recomended__guarantee-grid-5 {
+  grid-column: 2/4;
+  grid-row: 2/2;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 30px;
+}
+.guarantee .container .guarantee__bottom .guarantee__grid .recomended__guarantee-grid-5 .before {
+  position: relative;
+}
+.guarantee .container .guarantee__bottom .guarantee__grid .recomended__guarantee-grid-5 .before::before {
+  content: "";
+  height: 3px;
+  background: #99A8BF;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+}
+.guarantee .container .guarantee__bottom .guarantee__grid .recomended__guarantee-grid-5 h1 {
+  font-weight: 600;
+  font-size: 48px;
+  color: #99A8BF;
+  min-width: 100%;
 }
 
 .slider-block {
-  margin-top: 15vh;
+  padding: 0 20px;
 }
 .slider-block .container {
   max-width: 1760px;
   margin: 0 auto;
 }
 .slider-block .container .slider {
-  max-height: 670px;
+  height: 670px;
   width: 100%;
   height: 100%;
   background: #99A8BF;
@@ -385,6 +478,11 @@ a {
 .slider-block .container .slider .photo {
   position: relative;
   padding: 15px;
+  width: 100%;
+}
+.slider-block .container .slider .photo img {
+  height: 100%;
+  width: 100%;
 }
 .slider-block .container .slider .slider__functional {
   display: flex;
@@ -394,7 +492,7 @@ a {
 .slider-block .container .slider .slider__functional .content {
   display: flex;
   flex-direction: column;
-  gap: 7vh;
+  gap: 5vh;
 }
 .slider-block .container .slider .slider__functional .content h1 {
   font-size: 48px;
@@ -415,8 +513,26 @@ a {
   color: #FFFFFF;
   max-width: 45%;
 }
+.slider-block .container .slider .slider__functional .price__buttons {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.slider-block .container .slider .slider__functional .price__buttons h1 {
+  font-size: 48px;
+  color: #FFFFFF;
+  line-height: 62.4px;
+  max-width: 100%;
+}
+.slider-block .container .slider .slider__functional .price__buttons .buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
 
 .contacts {
+  padding: 0 20px;
   margin-top: 20vh;
 }
 .contacts .container {
@@ -481,13 +597,14 @@ a {
 }
 .items .container .photo__side {
   max-width: 960px;
+  max-height: 1000px;
   width: 100%;
   height: 100%;
 }
 .items .container .content__side {
   background: rgb(17, 14, 44);
   max-width: 960px;
-  height: 100%;
+  max-height: 995px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -522,7 +639,6 @@ a {
   color: #FFFFFF;
 }
 .items .container .content__side .price__bottom {
-  margin-top: 15%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -646,6 +762,9 @@ a {
 }
 .about__ramki .container .grid__mesh .grid__container-text p {
   font-size: 22px;
+}
+.about__ramki .container .grid__mesh .grid__container-text p span {
+  font-family: Hauora-600;
 }
 .about__ramki .container .grid__mesh .grid__container-1 {
   grid-column: 2/3;
@@ -774,7 +893,7 @@ a {
 .about__ramki .container .grid__mesh .grid__container-4 .before::before {
   content: "";
   height: 3px;
-  background: #000000;
+  background: #99A8BF;
   text-align: center;
   display: inline-block;
   width: 60%;
