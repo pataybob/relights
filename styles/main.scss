@@ -22,7 +22,7 @@ a{
         background: url(../images/main_car.jpg)  no-repeat;
         background-size: cover;
         width: 100vw;
-        height: 95vh;
+        height: 100vh;
         .top__header{
             background: linear-gradient(to right, #000,#190d58 , #000);
             height: 5vh;
@@ -115,7 +115,7 @@ a{
                     justify-content: space-around;
                     width: 100%;
                     .buttons{
-                        margin-top: 33vh;
+                        margin-top: 24%; //сделать адаптивно под меньшие размеры
                         display: flex;
                         gap: 40px;
                         a.order{
@@ -690,5 +690,68 @@ a{
                 color: #000000;
                 max-width: 70%;
             }
+            .grid__mesh{
+                display: grid;
+                .grid__container-text{
+                    display: flex;
+                    flex-direction: column;
+                    gap: 30px;
+                    max-width: 20%;
+                    p{
+                        font-size: 22px ;
+                    }
+
+                }
+                .grid__container-1{
+                    display: flex;
+                    flex-direction: column;
+                    padding: 25px;
+                    
+                    .before{
+                        position: relative;
+                        &::before{
+                            content: "";
+                            height: 2px;
+                            background: #000000;
+                            text-align: center;
+                            display: inline-block;
+                            width: 25%;
+
+                        }
+                    }
+                    h3{
+                        font-size: 22px ;
+                        max-width: 20%;
+                        &::before{
+                            content: "01";
+                            
+                        }
+                    }
+                    p{
+                        color: #bbb8b8;
+                        font-size: 16px;
+                        max-width: 20%;
+                        &::before{
+                            content: "-";
+                        }
+
+                    }
+                }
+                .grid__container-2{
+                    display: flex;
+                }
+                .grid__container-3{
+                    display: flex;
+                }
+                .grid__container-4{
+                    display: flex;
+                }
+                .grid__container-5{
+                    display: flex;
+                }
+            }
+        }
+        .end{
+            margin-top: 15vh;
         }
     }
