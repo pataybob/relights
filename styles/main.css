@@ -618,7 +618,7 @@ a {
 }
 
 .about__ramki {
-  margin-top: 20vh;
+  margin-top: 15vh;
 }
 .about__ramki .container {
   max-width: 1760px;
@@ -629,27 +629,25 @@ a {
   color: #000000;
   max-width: 70%;
 }
+.about__ramki .container .end {
+  margin-top: 15vh;
+}
 .about__ramki .container .grid__mesh {
   display: grid;
 }
-.about__ramki .container .grid__mesh .grid__container-text {
+.about__ramki .container .grid__mesh .grid__container__1 {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+}
+.about__ramki .container .grid__mesh .grid__container__1 .grid__item {
   display: flex;
   flex-direction: column;
-  gap: 30px;
-  max-width: 20%;
 }
-.about__ramki .container .grid__mesh .grid__container-text p {
-  font-size: 22px;
-}
-.about__ramki .container .grid__mesh .grid__container-1 {
-  display: flex;
-  flex-direction: column;
-  padding: 25px;
-}
-.about__ramki .container .grid__mesh .grid__container-1 .before {
+.about__ramki .container .grid__mesh .grid__container__1 .grid__item .before {
   position: relative;
 }
-.about__ramki .container .grid__mesh .grid__container-1 .before::before {
+.about__ramki .container .grid__mesh .grid__container__1 .grid__item .before::before {
   content: "";
   height: 2px;
   background: #000000;
@@ -657,33 +655,15 @@ a {
   display: inline-block;
   width: 25%;
 }
-.about__ramki .container .grid__mesh .grid__container-1 h3 {
+.about__ramki .container .grid__mesh .grid__container__1 .grid__item h3 {
   font-size: 22px;
   max-width: 20%;
 }
-.about__ramki .container .grid__mesh .grid__container-1 h3::before {
-  content: "01";
-}
-.about__ramki .container .grid__mesh .grid__container-1 p {
+.about__ramki .container .grid__mesh .grid__container__1 .grid__item p {
   color: #bbb8b8;
   font-size: 16px;
   max-width: 20%;
 }
-.about__ramki .container .grid__mesh .grid__container-1 p::before {
+.about__ramki .container .grid__mesh .grid__container__1 .grid__item p::before {
   content: "-";
-}
-.about__ramki .container .grid__mesh .grid__container-2 {
-  display: flex;
-}
-.about__ramki .container .grid__mesh .grid__container-3 {
-  display: flex;
-}
-.about__ramki .container .grid__mesh .grid__container-4 {
-  display: flex;
-}
-.about__ramki .container .grid__mesh .grid__container-5 {
-  display: flex;
-}
-.about__ramki .end {
-  margin-top: 15vh;
 }/*# sourceMappingURL=main.css.map */
