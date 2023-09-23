@@ -632,10 +632,11 @@ a{
                     background-color: #2A1A80;
                     padding: 18px 32px;
                     border-radius: 6px 6px 18px 6px;
+                    text-align: center;
 
                     min-width: 340px;
 
-                    font-size: 16px;
+                    font-size: 20px;
                     color: #FFFFFF;
                 }
             }
@@ -1059,6 +1060,120 @@ a{
         }
         .end{
             margin-top: 15vh;
+        }
+    }
+    .install__cars{
+        margin-top: 15vh;
+        .container{
+            .cars__container{
+                display: flex;
+                .skoda{
+                    background: url(../images/skoda-rapid.png);
+                    width: 546px;
+                    height: 995px;
+                    display: flex;
+                    flex-direction: column;
+                    h1{
+                        color: #FFFFFF;
+                        font-size: 48px;
+                    }
+                }
+                .tesla-1{
+                    background: url(../images/tesla-model-3.png);
+                    width: 546px;
+                    height: 995px;
+                }
+                .tesla-2{
+                    background: url(../images/tesla-model-3-2.png);
+                    width: 546px;
+                    height: 995px;
+                }
+                .skoda-2{
+                    background: url(../images/skoda-rapid-2.png);
+                    width: 100%;
+                    max-width: 280px;
+                    height: 995px;
+                }
+            }
+        }
+
+    }
+    .answer-question{
+        margin-top: 20vh;
+        .container{
+            max-width: 1760px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: row;
+            .left__side{
+                display: flex;
+                flex-direction: column;
+                gap: 50px;
+                h3{
+                    color: #bbb8b8;
+                    font-size: 16px;
+                    text-transform: uppercase;
+                }
+                h1{
+                    font-size: 48px;
+                    max-width: 80%;
+                    color: #000000;
+                }
+                img{
+                    margin-top: 30vh;
+                    width: 71px;
+                    height: 40px;
+                }
+            }
+            .right__side{
+                margin-top: 10vh;
+                display: flex;
+                flex-direction: column;
+                width: 60%;
+                .accordion-wrapper{
+                    .accordion{
+                        cursor: pointer;
+                        font-size: 20px;
+                        line-height: 41.6px;
+                        letter-spacing: -2%;
+                        color: #bbb8b8;
+                        padding: 30px;
+                        background: inherit;
+                        border: none;
+                        .active, .accordion:hover{
+                            color: #000000;
+                            &::after{
+                                content: "";
+                                height: 3px;
+                                background: #99A8BF;
+                                text-align: center;
+                                display: inline-block;
+                                width: 60%;
+    
+                            }
+                        }
+                        .active::after{
+                            content: "\2796";
+                        }
+                        &::after{
+                            content: "";
+                            height: 2px;
+                            background: #99A8BF;
+                            text-align: center;
+                            display: block;
+                            width: 100%;
+
+                        }
+                    }
+                    .panel{
+                        padding: 0 18px;
+                        background-color: white;
+                        max-height: 0;
+                        overflow: hidden;
+                        transition: max-height 0.2s ease-out;
+                    }
+                }
+            }
         }
     }
 
