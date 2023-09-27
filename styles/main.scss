@@ -30,6 +30,15 @@
 
 
 
+    @keyframes fade {
+        from {
+            opacity: 0.4
+        }
+        to {
+            opacity: 1
+        }
+    }
+
 @import url(fonts.css);
 *{
     box-sizing: border-box;
@@ -56,6 +65,8 @@ a{
 }
 
 .wrapper{
+    display: flex;
+    flex-direction: column;
     main{
         background: url(../images/main_car.jpg)  no-repeat;
         background-size: cover;
@@ -78,7 +89,12 @@ a{
             a.btn{
                 text-transform: uppercase;
                 color: #bbb8b8;
-                font-size: 18px;
+                font-size: 18px;  
+                letter-spacing: 0.8px;
+                &:hover{
+                    color: #FFFFFF;
+                    transition: all 0.3s ease;
+                }
             }
         }
         .header{
@@ -114,23 +130,53 @@ a{
                         li{
                             font-size: 18px;
                             font-family: Hauora-500;
+                            margin: 0;
+                            padding: 0;
+                            a{
+                                &::after{
+                                    display: block;
+                                    left: 0; 
+                                    width: 0;
+                                    height: 2px; 
+                                    background-color: #2A1A80;
+                                    content: "";
+                                    transition: width 0.3s ease-out; 
+        
+                                }
+                                &:hover{
+                                    color: #2A1A80;
+                                    transition: .3s ease;
+                                }
+                                &:hover:after{
+                                    width: 100%;
+                                    height: 2px;
+                                    left: 0;
+                                    transition: all .3s linear;
+                                }
+                            }
                         }
                     }
                 }
                 .header__btns{
                     display: flex;
+                    flex-direction: row;
+                    gap: 20px;
                     align-items: center;
                     .btn{
                         background-color: #2A1A80;
                         padding: 18px 32px;
                         border-radius: 6px 6px 18px 6px;
+                        text-align: center;
 
                         min-width: 200px;
 
                         font-size: 16px;
                         color: #FFFFFF;
+                        &:hover{
+                            background: #000000;
+                            transition: all 0.5s ease;
+                        }
                     }
-
                 }
             }
         }
@@ -173,9 +219,11 @@ a{
                             border-radius: 6px 6px 18px 6px;
 
                             background: #FFFFFF;
-                            color: #000000;
-
-                            
+                            color: #000000;  
+                            &:hover{
+                                transform: scale(1.030);
+                                transition: all 0.3s ease;
+                            }
                         }
                         a.consultation{
                             background-color: rgba(28,28,28,0);
@@ -192,6 +240,10 @@ a{
                             padding: 32px 24px;
                             border-radius: 6px 6px 18px 6px;
                             border: #FFFFFF 1px solid;
+                            &:hover{
+                                transform: scale(1.030);
+                                transition: all 0.3s ease;
+                            }
                         }
                     }
                     .text{
@@ -354,6 +406,12 @@ a{
                             padding: 24px 20px;
                             border-radius: 6px 6px 18px 6px;
                             border: #FFFFFF 1px solid;
+                            &:hover{
+                                color: #000;
+                                background-color: #FFFFFF;
+                                border: #000000 1px solid;
+                                transition: all 0.5s ease;
+                            }
                         }
                     }
                 }
@@ -559,71 +617,102 @@ a{
             max-width: 1760px;
             margin: 0 auto;
             .slider{
-
-                height: 670px;
-                width: 100%;
-                height: 100%;
-                
-                background: #99A8BF;
-                border-radius: 18px 18px 36px 18px;
-
                 display: flex;
-                position: relative;
-                .photo{
-                    position: relative;
-                    padding: 15px;
-                    width: 100%;
-                    img{
-                        height: 100%;
-                        width: 100%;
-                        
-                    }
-                }
-                .slider__functional{
+                flex-direction: row;
+                min-width: 0;
+                .slider__items{
                     display: flex;
-                    flex-direction: column;
-                    padding: 50px 50px;
-                    .content{
-                        display: flex;
-                        flex-direction: column;
-                        gap: 5vh;
+                    flex-direction: row;
+                
+                  .slider__item{
+                      max-height: 800px;
+                      width: 100%;
+                      height: 100%;
 
-                        h1{
-                            font-size: 48px ;
-                            color: #FFFFFF;
-                            line-height: 62.4px;
-                            max-width: 70%;
-                        }
-                        h2{
-                            font-family: Hauora-300;
-                            font-weight: 300;
-                            font-size: 24px;
-                            color: #fFFFFF;
-                            max-width: 65%;
-                        }
-                        p{
-                            font-weight: 500;
-                            font-size: 16px;
-                            color: #FFFFFF;
-                            max-width: 45%;
-                        }
-                    }
-                    .price__buttons{
-                        margin-top: 150px;
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-between;
-                        h1{
-                            font-size: 48px ;
-                            color: #FFFFFF;
-                            line-height: 62.4px;
-                            max-width: 100%;
-                        }
-                        .buttons{
-                            display: flex;
-                            flex-direction: row;
-                            gap: 5px;
-                        }
+                      background: #99A8BF;
+                      border-radius: 18px 18px 36px 18px;
+    
+                      display: flex;
+                      flex-direction: row;
+                      position: relative;
+
+                      animation-name: fade;
+                      animation-duration: 1.5s;
+
+                
+                      .photo{
+                          position: relative;
+                          padding: 15px;
+                          width: 100%;
+                          img{
+                              height: 100%;
+                              width: 100%;
+                              border-radius: 20px;
+
+                          }
+                      }
+                      .slider__functional{
+                          display: flex;
+                          flex-direction: column;
+                          padding: 50px 50px;
+                          .content{
+                              display: flex;
+                              flex-direction: column;
+                              gap: 5vh;
+
+                              h1{
+                                  font-size: 48px ;
+                                  color: #FFFFFF;
+                                  line-height: 62.4px;
+                                  max-width: 70%;
+                              }
+                              h2{
+                                  font-family: Hauora-300;
+                                  font-weight: 300;
+                                  font-size: 24px;
+                                  color: #fFFFFF;
+                                  max-width: 65%;
+                              }
+                              p{
+                                  font-weight: 500;
+                                  font-size: 16px;
+                                  color: #FFFFFF;
+                                  max-width: 45%;
+                              }
+                          }
+                          .price__buttons{
+                              margin-top: 150px;
+                              display: flex;
+                              flex-direction: row;
+                              justify-content: space-between;
+                              h1{
+                                  font-size: 48px ;
+                                  color: #FFFFFF;
+                                  line-height: 62.4px;
+                                  max-width: 100%;
+                              }
+                              .buttons{
+                                  display: flex;
+                                  flex-direction: row;
+                                  gap: 5px;
+                                  .next{
+                                      cursor: pointer;
+                                      &:hover{
+                                          transform: scale(1.1);
+                                          transition: all 0.3s ease;
+                                      }
+
+                                  }
+                                  .previous{
+                                      cursor: pointer;
+                                      &:hover{
+                                          transform: scale(1.1);
+                                          transition: all 0.3s ease;
+                                      }
+                                  }
+                                }
+                              }
+                          }
                     }
                 }
             }
@@ -666,6 +755,12 @@ a{
                     display: flex;
                     flex-direction: row;
                     gap:30px;
+                    img{
+                        &:hover{
+                            transform: scale(1.060);
+                            transition: all 0.3s ease;
+                        }
+                    }
                 }
             }
             .form__side{
@@ -746,7 +841,7 @@ a{
                 width: 100%;
                 display: flex;
                 flex-direction: column;
-                gap: 50px;
+                gap: 80px;
                 padding: 50px 50px;
                 h3{
                     font-size: 16px;
@@ -782,6 +877,7 @@ a{
                     display: flex;
                     flex-direction: row;
                     justify-content: space-between;
+                    
                     .price{
                         font-size: 48px;
                         font-family: Hauora-600;
@@ -834,15 +930,21 @@ a{
                 }
                 .btn{
                     margin-top: 30%;
-                    background-color: #FFFFFF;
+                    background-color: transparent;
                     padding: 18px 32px;
                     border-radius: 6px 6px 18px 6px;
+                    border: 2px solid white;
 
 
                     font-size: 16px;
-                    color: #2A1A80;
+                    color: #FFFFFF;
                     max-width: 302px;
                     text-align: center;
+                    &:hover{
+                        color: #000000;
+                        background: #FFFFFF;
+                        transition: all 0.5s ease;
+                    }
                 }
 
 
@@ -874,15 +976,22 @@ a{
                 }
                 .btn{
                     margin-top: 30%;
-                    background-color: #FFFFFF;
+                    background-color: transparent;
                     padding: 18px 32px;
                     border-radius: 6px 6px 18px 6px;
+                    border: 2px solid white;
 
 
                     font-size: 16px;
-                    color: #2A1A80;
+                    color: #FFFFFF;
                     max-width: 302px;
                     text-align: center;
+                    &:hover{
+                        color: #000000;
+                        background: #FFFFFF;
+                        transition: all 0.5s ease;
+                    }
+
                 }
             }
         }
@@ -1470,6 +1579,11 @@ a{
     
                         font-size: 20px;
                         color: #FFFFFF;
+                        &:hover{
+                            transition: all 0.5s ease;
+                            color: #000000;
+                            background: #FFFFFF;
+                        }
                     }
                 }
                 .contacts{
@@ -1485,6 +1599,10 @@ a{
                         img{
                             width: 60px;
                             height: 60px;
+                             &:hover{
+                                 transform: scale(1.1);
+                                 transition: all 0.3s ease;
+                             }
                         }
                     }
                     .mini__logo{

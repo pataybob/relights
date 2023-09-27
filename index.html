@@ -8,7 +8,7 @@
   <link rel="stylesheet" href="./styles/main.css">
 </head>
 <body>
-  <div class="wrapper">
+  <div class="wrapper" id="wrapper">
     <main class="main">
       <div class="top__header">
         <div class="discount">
@@ -16,35 +16,35 @@
         </div>
         <a href="#" class="btn">Оформить</a>
       </div>
-      <header class="header">
+      <header class="header" id="header">
         <div class="container">
             <div class="header__logo">
-              <img src="./images/REDLIGHTS_ Logo Black.svg" alt="">
+              <a href="#wrapper"><img src="./images/REDLIGHTS_ Logo Black.svg" alt=""></a>
             </div>
             <div class="header__nav">
               <ul>
-                <li>ПРЕИМУЩЕСТВА</li>
-                <li>ТОВАРЫ</li>
-                <li>ПРОЦЕСС</li>
-                <li>ПОРТФОЛИО</li>
-                <li>ДОСТАВКА</li>
+                <li><a href="#about-us">ПРЕИМУЩЕСТВА</a></li>
+                <li><a href="#slider">ТОВАРЫ</a></li>
+                <li><a href="#process">ПРОЦЕСС</a></li>
+                <li><a href="#install">ПОРТФОЛИО</a></li>
+                <li><a href="#delivery">ДОСТАВКА</a></li>
               </ul>
             </div>
             <div class="header__btns">
-              <img src="./images/suggest.png" alt="" class="suggest">
-              <div class="btn">Оформить заказ</div>
+              <a href="#"><img src="./images/suggest.png" alt="" class="modal" id="ModalBtn"></a>
+              <a href="#contact" class="btn">Оформить заказ</a>
             </div>
           </div>
         </header>
-        <div class="hero">
+        <div class="hero" id="hero">
           <div class="container">
             <div class="hero__text">
               <h1>Откидные рамки и номера</h1>
             </div>
             <div class="hero__bottom">
               <div class="buttons">
-                <a href="#" class="order">Оформить заказ</a>
-                <a href="#" class="consultation">Бесплатная консультация</a>
+                <a href="#contact" class="order" id="order" onmouseover="hoverOnLeft()" onmouseout="hoverOffLeft()">Оформить заказ</a>
+                <a href="#contacts-2" class="consultation" id="consultation" onmouseover="hoverOnRight()" onmouseout="hoverOffRight()">Бесплатная консультация</a>
 
               </div>
               <div class="text">
@@ -53,7 +53,7 @@
             </div>
           </div>
         </div>
-        <div class="section__about-us">
+        <div class="section__about-us" id="about-us">
           <div class="container">
             <div class="left__menu">
               <div class="information">
@@ -111,7 +111,7 @@
             </div>
           </div>
         </div>
-        <div class="advantages">
+        <div class="advantages" id="advantages">
           <div class="container-left">
               <div class="advantages-left__side">
                 <div class="adv__header">
@@ -120,7 +120,7 @@
                 </div>
                 <div class="text__btn">
                   <p>В системе нет ни одной не нужной детали, все продумано для максимально комфортного использования</p>
-                  <a href="#" class="adv__btn">Бесплатная консультация</a>
+                  <a href="#contact" class="adv__btn">Бесплатная консультация</a>
                 </div>
               </div>
             </div>
@@ -139,7 +139,7 @@
               </div>
           </div>
         </div>
-        <div class="guarantee">
+        <div class="guarantee" id="guarantee">
           <div class="container">
             <div class="guarantee_main">
               <h1>На все откидные рамки предоставляем гарантию <span style="color: #2A1A80;">{365 дней}</span>, а также поддержку по любым вопросам.</h1>
@@ -180,46 +180,71 @@
             </div>
           </div>
         </div>
-        <div class="slider-block">
+        <div class="slider-block" id="slider">
           <div class="container">
             <div class="slider">
-              <div class="photo">
-                <img src="/images/ramka.png" alt="">
-              </div>
-              <div class="slider__functional">
-                <div class="content">
-                  <h1>Откидная рамка на жесткой тяге с 2 шарнирами</h1>
-                  <h2>
-                    Работает на основании прямого соединения откидной пластины и стержня диаметром 9 мм, с помощью которого рамка откидывается на 90 градусов.</h2>
-                  <p>Если пластина находится в начальном положении, невозможно определить наличие специального оборудования на автомобиле.</p>
-                  
-                </div>
-
-                <div class="price__buttons">
-                  <div class="price">
-                    <h1>от 6 500 ₽</h1>
+              <div class="slider__items">
+                <div class="slider__item">
+                    <div class="photo">
+                      <img src="/images/ramka.png" alt="">
+                    </div>
+                    <div class="slider__functional">
+                      <div class="content">
+                        <h1>Откидная рамка на жесткой тяге с 2 шарнирами</h1>
+                        <h2>
+                          Работает на основании прямого соединения откидной пластины и стержня диаметром 9 мм, с помощью которого рамка откидывается на 90 градусов.</h2>
+                        <p>Если пластина находится в начальном положении, невозможно определить наличие специального оборудования на автомобиле.</p>
+                        </div>
+                      <div class="price__buttons">
+                        <div class="price">
+                          <h1>от 6 500 ₽</h1>
+                        </div>
+                        <div class="buttons">
+                         <a class="previous" onclick="previousSlide()"> <img src="/images/left-arrow.svg" alt=""></a>
+                         <a class="next" onclick="nextSlide()"> <img src="/images/right-arrow.svg" alt=""></a>
+                      </div>
+                    </div>
                   </div>
-                  <div class="buttons">
-                    <img src="/images/left-arrow.svg" alt="">
-                    <img src="/images/right-arrow.svg" alt="">
                 </div>
-
-                </div>
-
               </div>
+              <div class="slider__items">
+                 <div class="slider__item">
+                   <div class="photo">
+                     <img src="/images/moto-ramka.png" alt="">
+                   </div>
+                   <div class="slider__functional">
+                     <div class="content">
+                       <h1>Откидная рамка для мотоциклов</h1>
+                       <h2>
+                         Работает на основании прямого соединения откидной пластины и стержня диаметром 9 мм, с помощью которого рамка откидывается на 90 градусов.</h2>
+                       <p>Если пластина находится в начальном положении, невозможно определить наличие специального оборудования на автомобиле.</p>
+                       </div>
+                     <div class="price__buttons">
+                       <div class="price">
+                         <h1>от 8500 ₽</h1>
+                       </div>
+                       <div class="buttons">
+                         <a class="previous" onclick="previousSlide()"> <img src="/images/left-arrow.svg" alt=""></a>
+                         <a class="next" onclick="nextSlide()"> <img src="/images/right-arrow.svg" alt=""></a>
+                     </div>
+                   </div>
+                 </div>
+               </div>
+          </div>
+
             </div>
           </div>
         </div>
-        <div class="contacts">
+        <div class="contacts" id="contact">
           <div class="container">
             <div class="socials__side">
               <h3>Будем на связи</h3>
               <h1>Оставьте заявку на обратный звонок, и наш менеджер свяжется с Вами в ближайшее время</h1>
               <p>Или напишите нам в соц.сетях</p>
               <div class="socials">
-                <a href="#"><img src="/images/telegram.svg" alt=""></a>
-                <a href="#"><img src="/images/whatsapp.svg" alt=""></a>
-                <a href="#"><img src="/images/viber.svg" alt=""></a>
+                <a href="https://web.telegram.org" target="_blank"><img src="/images/telegram.svg" alt=""></a>
+                <a href="https://www.whatsapp.com/?lang=ru_RU" target="_blank"><img src="/images/whatsapp.svg" alt=""></a>
+                <a href="https://www.viber.com/ru/" target="_blank"><img src="/images/viber.svg" alt=""></a>
               </div>
             </div>
             <div class="form__side">
@@ -239,7 +264,7 @@
             </div>
           </div>
         </div>
-        <div class="items">
+        <div class="items" id="items">
           <div class="container">
             <div class="photo__side">
               <img src="images/controller.png" alt="">
@@ -263,7 +288,7 @@
             </div>
           </div>
         </div>
-        <div class="car__motorcycle">
+        <div class="car__motorcycle" id="car-moto">
           <div class="container">
             <div class="car">
               <h1>Автомобили</h1>
@@ -277,7 +302,7 @@
             </div>
           </div>
         </div>
-        <div class="about__ramki">
+        <div class="about__ramki" id="process">
           <div class="container">
             <div class="header__text">
               На установку одной откидной рамки нужно <span style="color: #2A1A80;">{от 3 до 8 часов} </span> в зависимости от конкретных особенностей автомобиля
@@ -337,16 +362,16 @@
           </div>
           <div class="end"><img src="./images/dfghgdg.png" alt=""></div>
         </div>
-        <div class="contacts">
+        <div class="contacts" id="contacts-2">
           <div class="container">
             <div class="socials__side">
               <h3>Будем на связи</h3>
               <h1>Оставьте заявку на обратный звонок, и наш менеджер свяжется с Вами в ближайшее время</h1>
               <p>Или напишите нам в соц.сетях</p>
               <div class="socials">
-                <a href="#"><img src="/images/telegram.svg" alt=""></a>
-                <a href="#"><img src="/images/whatsapp.svg" alt=""></a>
-                <a href="#"><img src="/images/viber.svg" alt=""></a>
+                <a href="https://web.telegram.org" target="_blank"><img src="/images/telegram.svg" alt=""></a>
+                <a href="https://www.whatsapp.com/?lang=ru_RU" target="_blank"><img src="/images/whatsapp.svg" alt=""></a>
+                <a href="https://www.viber.com/ru/" target="_blank"><img src="/images/viber.svg" alt=""></a>
               </div>
             </div>
             <div class="form__side">
@@ -366,7 +391,7 @@
             </div>
           </div>
         </div>
-        <div class="install__cars">
+        <div class="install__cars" id="install">
           <div class="container">
             <div class="cars__container">
               <div class="skoda">
@@ -386,7 +411,7 @@
             </div>
           </div>
         </div>
-        <div class="answer-question">
+        <div class="answer-question" id="ans-question">
           <div class="container">
             <div class="left__side">
               <h3>Вопрос-Ответ</h3>
@@ -413,7 +438,7 @@
             </div>
           </div>
         </div>
-        <div class="delivery">
+        <div class="delivery" id="delivery">
           <div class="container">
             <div class="left__side">
               <div class="text">
@@ -443,7 +468,7 @@
             </div>
           </div>
         </div>
-        <div class="footer">
+        <div class="footer" id="footer">
             <div class="container">
               <div class="socials__side">
                 <h1>Москва, 1-й Магистральный пр-д, 9 строение 26</h1>
@@ -479,9 +504,9 @@
                 </div>
                 <div class="contacts">
                   <div class="social">
-                    <img src="./images/telegram-blue.svg" alt="">
-                    <img src="./images/whatsapp-blue.svg" alt="">
-                    <img src="./images/viber-blue.svg" alt="">
+                    <a href="https://web.telegram.org/k/" target="_blank"><img src="./images/telegram-blue.svg" alt=""></a>
+                    <a href="https://web.whatsapp.com" target="_blank"><img src="./images/whatsapp-blue.svg" alt=""></a>
+                    <a href="https://www.viber.com/ru/" target="_blank"><img src="./images/viber-blue.svg" alt=""></a>
                   </div>
                   <img class="mini__logo" src="./images/mini-logo.svg" alt="">
                 </div>
@@ -491,7 +516,7 @@
     </main>
   </div>
 
-
+  <script src="./scripts/script.js"></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="./scripts/scroll.js"></script>
   <script src="./scripts/accordion.js"></script>

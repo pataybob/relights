@@ -19,6 +19,14 @@
   color: rgb(102, 102, 102);
 }
 
+@keyframes fade {
+  from {
+    opacity: 0.4;
+  }
+  to {
+    opacity: 1;
+  }
+}
 * {
   box-sizing: border-box;
   font-family: "Hauora-400";
@@ -41,6 +49,10 @@ a {
   text-decoration: none;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+}
 .wrapper main {
   background: url(../images/main_car.jpg) no-repeat;
   background-size: cover;
@@ -65,6 +77,11 @@ a {
   text-transform: uppercase;
   color: #bbb8b8;
   font-size: 18px;
+  letter-spacing: 0.8px;
+}
+.wrapper main .top__header a.btn:hover {
+  color: #FFFFFF;
+  transition: all 0.3s ease;
 }
 .wrapper main .header {
   background-color: #FFFFFF;
@@ -98,18 +115,46 @@ a {
 .wrapper main .header .container .header__nav ul li {
   font-size: 18px;
   font-family: Hauora-500;
+  margin: 0;
+  padding: 0;
+}
+.wrapper main .header .container .header__nav ul li a::after {
+  display: block;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #2A1A80;
+  content: "";
+  transition: width 0.3s ease-out;
+}
+.wrapper main .header .container .header__nav ul li a:hover {
+  color: #2A1A80;
+  transition: 0.3s ease;
+}
+.wrapper main .header .container .header__nav ul li a:hover:after {
+  width: 100%;
+  height: 2px;
+  left: 0;
+  transition: all 0.3s linear;
 }
 .wrapper main .header .container .header__btns {
   display: flex;
+  flex-direction: row;
+  gap: 20px;
   align-items: center;
 }
 .wrapper main .header .container .header__btns .btn {
   background-color: #2A1A80;
   padding: 18px 32px;
   border-radius: 6px 6px 18px 6px;
+  text-align: center;
   min-width: 200px;
   font-size: 16px;
   color: #FFFFFF;
+}
+.wrapper main .header .container .header__btns .btn:hover {
+  background: #000000;
+  transition: all 0.5s ease;
 }
 .wrapper main .hero {
   display: flex;
@@ -150,6 +195,10 @@ a {
   background: #FFFFFF;
   color: #000000;
 }
+.wrapper main .hero .container .hero__bottom .buttons a.order:hover {
+  transform: scale(1.03);
+  transition: all 0.3s ease;
+}
 .wrapper main .hero .container .hero__bottom .buttons a.consultation {
   background-color: rgba(28, 28, 28, 0);
   color: #FFFFFF;
@@ -162,6 +211,10 @@ a {
   padding: 32px 24px;
   border-radius: 6px 6px 18px 6px;
   border: #FFFFFF 1px solid;
+}
+.wrapper main .hero .container .hero__bottom .buttons a.consultation:hover {
+  transform: scale(1.03);
+  transition: all 0.3s ease;
 }
 .wrapper main .hero .container .hero__bottom .text {
   margin-left: 30vw;
@@ -307,6 +360,12 @@ a {
   padding: 24px 20px;
   border-radius: 6px 6px 18px 6px;
   border: #FFFFFF 1px solid;
+}
+.advantages .container-left .advantages-left__side .text__btn a:hover {
+  color: #000;
+  background-color: #FFFFFF;
+  border: #000000 1px solid;
+  transition: all 0.5s ease;
 }
 .advantages .advantages__right-side {
   width: 100%;
@@ -503,68 +562,95 @@ a {
   margin: 0 auto;
 }
 .slider-block .container .slider {
-  height: 670px;
+  display: flex;
+  flex-direction: row;
+  min-width: 0;
+}
+.slider-block .container .slider .slider__items {
+  display: flex;
+  flex-direction: row;
+}
+.slider-block .container .slider .slider__items .slider__item {
+  max-height: 800px;
   width: 100%;
   height: 100%;
   background: #99A8BF;
   border-radius: 18px 18px 36px 18px;
   display: flex;
+  flex-direction: row;
   position: relative;
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
-.slider-block .container .slider .photo {
+.slider-block .container .slider .slider__items .slider__item .photo {
   position: relative;
   padding: 15px;
   width: 100%;
 }
-.slider-block .container .slider .photo img {
+.slider-block .container .slider .slider__items .slider__item .photo img {
   height: 100%;
   width: 100%;
+  border-radius: 20px;
 }
-.slider-block .container .slider .slider__functional {
+.slider-block .container .slider .slider__items .slider__item .slider__functional {
   display: flex;
   flex-direction: column;
   padding: 50px 50px;
 }
-.slider-block .container .slider .slider__functional .content {
+.slider-block .container .slider .slider__items .slider__item .slider__functional .content {
   display: flex;
   flex-direction: column;
   gap: 5vh;
 }
-.slider-block .container .slider .slider__functional .content h1 {
+.slider-block .container .slider .slider__items .slider__item .slider__functional .content h1 {
   font-size: 48px;
   color: #FFFFFF;
   line-height: 62.4px;
   max-width: 70%;
 }
-.slider-block .container .slider .slider__functional .content h2 {
+.slider-block .container .slider .slider__items .slider__item .slider__functional .content h2 {
   font-family: Hauora-300;
   font-weight: 300;
   font-size: 24px;
   color: #fFFFFF;
   max-width: 65%;
 }
-.slider-block .container .slider .slider__functional .content p {
+.slider-block .container .slider .slider__items .slider__item .slider__functional .content p {
   font-weight: 500;
   font-size: 16px;
   color: #FFFFFF;
   max-width: 45%;
 }
-.slider-block .container .slider .slider__functional .price__buttons {
+.slider-block .container .slider .slider__items .slider__item .slider__functional .price__buttons {
   margin-top: 150px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
-.slider-block .container .slider .slider__functional .price__buttons h1 {
+.slider-block .container .slider .slider__items .slider__item .slider__functional .price__buttons h1 {
   font-size: 48px;
   color: #FFFFFF;
   line-height: 62.4px;
   max-width: 100%;
 }
-.slider-block .container .slider .slider__functional .price__buttons .buttons {
+.slider-block .container .slider .slider__items .slider__item .slider__functional .price__buttons .buttons {
   display: flex;
   flex-direction: row;
   gap: 5px;
+}
+.slider-block .container .slider .slider__items .slider__item .slider__functional .price__buttons .buttons .next {
+  cursor: pointer;
+}
+.slider-block .container .slider .slider__items .slider__item .slider__functional .price__buttons .buttons .next:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
+}
+.slider-block .container .slider .slider__items .slider__item .slider__functional .price__buttons .buttons .previous {
+  cursor: pointer;
+}
+.slider-block .container .slider .slider__items .slider__item .slider__functional .price__buttons .buttons .previous:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
 }
 
 .contacts {
@@ -606,6 +692,10 @@ a {
   display: flex;
   flex-direction: row;
   gap: 30px;
+}
+.contacts .container .socials__side .socials img:hover {
+  transform: scale(1.06);
+  transition: all 0.3s ease;
 }
 .contacts .container .form__side {
   margin-top: 70px;
@@ -676,7 +766,7 @@ a {
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 50px;
+  gap: 80px;
   padding: 50px 50px;
 }
 .items .container .content__side h3 {
@@ -760,13 +850,19 @@ a {
 }
 .car__motorcycle .container .car .btn {
   margin-top: 30%;
-  background-color: #FFFFFF;
+  background-color: transparent;
   padding: 18px 32px;
   border-radius: 6px 6px 18px 6px;
+  border: 2px solid white;
   font-size: 16px;
-  color: #2A1A80;
+  color: #FFFFFF;
   max-width: 302px;
   text-align: center;
+}
+.car__motorcycle .container .car .btn:hover {
+  color: #000000;
+  background: #FFFFFF;
+  transition: all 0.5s ease;
 }
 .car__motorcycle .container .motorcycle {
   background: url(../images/motorcycle.png);
@@ -794,13 +890,19 @@ a {
 }
 .car__motorcycle .container .motorcycle .btn {
   margin-top: 30%;
-  background-color: #FFFFFF;
+  background-color: transparent;
   padding: 18px 32px;
   border-radius: 6px 6px 18px 6px;
+  border: 2px solid white;
   font-size: 16px;
-  color: #2A1A80;
+  color: #FFFFFF;
   max-width: 302px;
   text-align: center;
+}
+.car__motorcycle .container .motorcycle .btn:hover {
+  color: #000000;
+  background: #FFFFFF;
+  transition: all 0.5s ease;
 }
 
 .about__ramki {
@@ -1342,6 +1444,11 @@ a {
   font-size: 20px;
   color: #FFFFFF;
 }
+.footer .right__side .form__side-footer .btn:hover {
+  transition: all 0.5s ease;
+  color: #000000;
+  background: #FFFFFF;
+}
 .footer .right__side .contacts {
   display: flex;
   flex-direction: row;
@@ -1357,6 +1464,10 @@ a {
 .footer .right__side .contacts .social img {
   width: 60px;
   height: 60px;
+}
+.footer .right__side .contacts .social img:hover {
+  transform: scale(1.1);
+  transition: all 0.3s ease;
 }
 .footer .right__side .contacts .mini__logo {
   width: 71px;
