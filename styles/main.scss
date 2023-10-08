@@ -26,7 +26,8 @@
     background: transparent;
     outline: none;
   
-    color: rgb(102, 102, 102);}
+    color: #000;
+    font-size: 20px;}
 
 
 
@@ -72,9 +73,10 @@ a{
         background-size: cover;
         width: 100vw;
         height: 1000px;
+        
         .top__header{
             background: linear-gradient(to right, #000,#190d58 , #000);
-            height: 5vh;
+            padding: 20px 0;
 
             display: flex;
             flex-direction: row;
@@ -113,7 +115,6 @@ a{
                 margin: 0 auto;
                 display: flex;
                 align-items: center;
-                display: flex;
                 gap: 10vw;
                 
                 .header__logo img{
@@ -183,7 +184,8 @@ a{
         .hero{
 
             display: flex;
-            padding: 50px 0 20px;
+            padding: 50px 20px;
+            
             .container{
                 max-width: 1760px;
                 margin: 0 auto;
@@ -203,7 +205,7 @@ a{
                     justify-content: space-around;
                     width: 100%;
                     .buttons{
-                        margin-top: 400px; //сделать адаптивно под меньшие размеры
+                        margin-top: 300px; //сделать адаптивно под меньшие размеры
                         display: flex;
                         gap: 40px;
                         a.order{
@@ -803,7 +805,7 @@ a{
                         max-width: 100%;
                     }
                     label{
-                        color: rgb(150, 143, 143);
+                        color: #000;
                         font-size: 22px;
                         padding: 10px 0;
                     }
@@ -827,24 +829,31 @@ a{
         margin-top: 15vh;
         .container{
             display: flex;
+            flex-direction: row;
+            gap: 0;
             .photo__side{
-                max-width: 960px;
-                max-height: 1000px;
+                max-width: 100%;
+                max-height: 995px;
                 width: 100%;
                 height: 100%;
+                img{
+                    min-width: 100%;
+                    max-height: 995px;
+                }
             }
             .content__side{
                 background: rgb(17, 14, 44);
-                max-width: 960px;
                 max-height: 995px;
+                max-width: 100%;
 
                 width: 100%;
                 display: flex;
                 flex-direction: column;
+                padding-left: 50px;
                 gap: 80px;
-                padding: 50px 50px;
                 h3{
-                    font-size: 16px;
+                    padding-top: 40px;
+                    font-size: 20px;
                     color: #FFFFFF;
                     text-transform: uppercase;
                     font-weight: 300;
@@ -888,6 +897,7 @@ a{
                         display: flex;
                         flex-direction: row;
                         gap: 20px;
+                        padding-right: 50px;
 
                     }
                 }
@@ -1267,32 +1277,179 @@ a{
         .container{
             .cars__container{
                 display: flex;
+                overflow-x: scroll;
+                overflow-y: hidden;
+                
                 .skoda{
                     background: url(../images/skoda-rapid.png);
-                    width: 546px;
-                    height: 995px;
+                    max-height: 995px;
+                    min-width: 546px;
+                    gap: 31%;
                     display: flex;
                     flex-direction: column;
+                    padding: 20px 30px;
                     h1{
                         color: #FFFFFF;
                         font-size: 48px;
+                        font-weight: 600;
+                    }
+                    img{
+                        margin: 0 auto;
+                    }
+                    .ps{
+                        display: flex;
+                        flex-direction: row;
+                        gap: 80%;
+                        align-items: center;
+                        box-sizing: border-box;
+                        margin-top: 70px;
+                        h3{
+                            color: #FFFFFF;
+                        }
                     }
                 }
                 .tesla-1{
                     background: url(../images/tesla-model-3.png);
-                    width: 546px;
-                    height: 995px;
+
+                    min-width: 546px;
+                    max-height: 995px;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 20px 30px;
+                    gap: 31%;
+                    h1{
+                        color: #FFFFFF;
+                        font-size: 48px;
+                        font-weight: 600;
+                    }
+                    img{
+                        margin: 0 auto;
+                    }
+                    .ps{
+                        display: flex;
+                        flex-direction: row;
+                        gap: 80%;
+                        align-items: center;
+                        box-sizing: border-box;
+                        margin-top: 70px;
+                        h3{
+                            color: #FFFFFF;
+                        }
+                    }
                 }
                 .tesla-2{
                     background: url(../images/tesla-model-3-2.png);
-                    width: 546px;
-                    height: 995px;
+
+                    min-width: 546px;
+                    max-height: 995px;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 20px 30px;
+                    gap: 31%;
+                    h1{
+                        color: #FFFFFF;
+                        font-size: 48px;
+                        font-weight: 600;
+                    }
+                    img{
+                        margin: 0 auto;
+                    }
+                    .ps{
+                        display: flex;
+                        flex-direction: row;
+                        gap: 80%;
+                        align-items: center;
+                        box-sizing: border-box;
+                        margin-top: 70px;
+                        h3{
+                            color: #FFFFFF;
+                        }
+                    }
                 }
                 .skoda-2{
-                    background: url(../images/skoda-rapid-2.png);
-                    width: 100%;
-                    max-width: 280px;
-                    height: 995px;
+                    background: url(../images/skoda-rapid.png);
+
+                    min-width: 546px;
+                    max-height: 995px;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 20px 30px;
+                    gap: 31%;
+                    h1{
+                        color: #FFFFFF;
+                        font-size: 48px;
+                        font-weight: 600;
+                    }
+                    img{
+                        margin: 0 auto;
+                    }
+                    .ps{
+                        display: flex;
+                        flex-direction: row;
+                        gap: 80%;
+                        align-items: center;
+                        box-sizing: border-box;
+                        margin-top: 70px;
+                        h3{
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+                .skoda-3{
+                    background: url(../images/skoda-rapid.png);
+
+                    min-width: 546px;
+                    max-height: 995px;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 20px 30px;
+                    gap: 30vh;
+                    h1{
+                        color: #FFFFFF;
+                        font-size: 48px;
+                        font-weight: 600;
+                    }
+                    img{
+                        margin: 0 auto;
+                    }
+                    .ps{
+                        display: flex;
+                        flex-direction: row;
+                        gap: 80%;
+                        align-items: center;
+                        box-sizing: border-box;
+                        margin-top: 70px;
+                        h3{
+                            color: #FFFFFF;
+                        }
+                    }
+                }
+                .skoda-4{
+                    background: url(../images/skoda-rapid.png);
+
+                    min-width: 546px;
+                    max-height: 995px;
+                    display: flex;
+                    flex-direction: column;
+                    padding: 50px 30px;
+                    h1{                                                                                 
+                        color: #FFFFFF;
+                        font-size: 48px;
+                        font-weight: 600;
+                    }
+                    img{
+                        margin: 0 auto;
+                    }
+                    .ps{
+                        display: flex;
+                        flex-direction: row;
+                        gap: 80%;
+                        align-items: center;
+                        box-sizing: border-box;                                                                                                                 
+                        h3{
+                            color: #FFFFFF;
+                        }
+                    }
                 }
             }
         }
@@ -1300,6 +1457,7 @@ a{
     }
     .answer-question{
         margin-top: 20vh;
+        padding: 0 20px;
         .container{
             max-width: 1760px;
             margin: 0 auto;
@@ -1465,7 +1623,7 @@ a{
             }
         }
         .footer{
-            padding: 200px 20px;
+            padding: 150px 20px;
             background: #000000;
             .container{
                 max-width: 1760px;
@@ -1590,7 +1748,7 @@ a{
                     display: flex;
                     flex-direction: row;
                     align-items: center;
-                    gap: 270px;
+                    gap: 220px;
                     .social{
                         display: flex;
                         flex-direction: row;
