@@ -1,0 +1,5 @@
+@media screen and (max-width: 1400px) {
+  .wrapper main .header .container {
+    gap: 5vw;
+  }
+}/*# sourceMappingURL=adaptive.css.map */

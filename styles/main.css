@@ -1,3 +1,4 @@
+@import url(adaptive.css);
 @import url(fonts.css);
 .footer .right__side .form__side-footer .field textarea, .contacts .container .form__side .field textarea {
   -webkit-appearance: none;
@@ -34,6 +35,7 @@
   margin: 0;
   padding: 0;
   color: #000000;
+  font-size: 16px;
 }
 
 .fixed {
@@ -71,13 +73,13 @@ a {
 }
 .wrapper main .top__header .discount p {
   font-family: Hauora-300;
-  font-size: 14xpx;
+  font-size: 1rem;
   color: #FFFFFF;
 }
 .wrapper main .top__header a.btn {
   text-transform: uppercase;
   color: #bbb8b8;
-  font-size: 18px;
+  font-size: 1, 125rem;
   letter-spacing: 0.8px;
 }
 .wrapper main .top__header a.btn:hover {
@@ -113,7 +115,7 @@ a {
   gap: 60px;
 }
 .wrapper main .header .container .header__nav ul li {
-  font-size: 18px;
+  font-size: 1, 5rem;
   font-family: Hauora-500;
   margin: 0;
   padding: 0;
@@ -165,7 +167,7 @@ a {
   margin: 0 auto;
 }
 .wrapper main .hero .container .hero__text h1 {
-  font-size: 135px;
+  font-size: 8rem;
   color: #FFFFFF;
   max-width: 60%;
   line-height: 100%;
@@ -179,7 +181,7 @@ a {
   width: 100%;
 }
 .wrapper main .hero .container .hero__bottom .buttons {
-  margin-top: 300px;
+  margin-top: 400px;
   display: flex;
   gap: 40px;
 }
@@ -189,7 +191,7 @@ a {
   align-items: center;
   width: 338px;
   height: 18px;
-  font-size: 16px;
+  font-size: 1rem;
   padding: 32px 18px;
   border-radius: 6px 6px 18px 6px;
   background: #FFFFFF;
@@ -207,7 +209,7 @@ a {
   align-items: center;
   width: 338px;
   height: 24px;
-  font-size: 16px;
+  font-size: 1rem;
   padding: 32px 24px;
   border-radius: 6px 6px 18px 6px;
   border: #FFFFFF 1px solid;
@@ -225,7 +227,7 @@ a {
 }
 .wrapper main .section__about-us {
   display: flex;
-  margin-top: 20vh;
+  margin-top: 25vh;
   padding: 0 20px;
 }
 .wrapper main .section__about-us .container {
@@ -245,14 +247,13 @@ a {
   gap: 10%;
 }
 .wrapper main .section__about-us .container .left__menu .information .about__logo {
-  font-size: 84px;
+  font-size: 5rem;
   line-height: 100%;
   width: 150%;
 }
 .wrapper main .section__about-us .container .left__menu .information .text__about {
   margin-top: 10%;
   font-family: Hauora-400;
-  font-size: 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -260,6 +261,10 @@ a {
 }
 .wrapper main .section__about-us .container .left__menu .information .text__about span {
   font-family: Hauora-600;
+  font-size: 1.25rem;
+}
+.wrapper main .section__about-us .container .left__menu .information .text__about p {
+  font-size: 1.25rem;
 }
 .wrapper main .section__about-us .container .left__menu .mini__logo {
   width: 189px;
@@ -326,12 +331,12 @@ a {
 }
 .advantages .container-left .advantages-left__side .adv__header h3 {
   color: #fFFFFF;
-  font-size: 18px;
+  font-size: 1.125rem;
   text-transform: uppercase;
   font-weight: 300;
 }
 .advantages .container-left .advantages-left__side .adv__header h1 {
-  font-size: 80px;
+  font-size: 5rem;
   color: #FFFFFF;
   width: 90%;
   line-height: 100%;
@@ -344,7 +349,7 @@ a {
 .advantages .container-left .advantages-left__side .text__btn p {
   font-family: Hauora-300;
   color: #fFFFFF;
-  font-size: 22px;
+  font-size: 1.375rem;
   max-width: 55%;
   font-weight: 300;
 }
@@ -356,7 +361,7 @@ a {
   align-items: center;
   width: 338px;
   height: 24px;
-  font-size: 16px;
+  font-size: 1rem;
   padding: 24px 20px;
   border-radius: 6px 6px 18px 6px;
   border: #FFFFFF 1px solid;
@@ -390,7 +395,7 @@ a {
 }
 .advantages .advantages__right-side .bottom-side h1 {
   color: #2A1A80;
-  font-size: 44px;
+  font-size: 2.75rem;
   font-family: Hauora-400;
 }
 .advantages .advantages__right-side .bottom-side ul {
@@ -402,7 +407,7 @@ a {
   gap: 40px;
 }
 .advantages .advantages__right-side .bottom-side ul li {
-  font-size: 20px;
+  font-size: 1.25rem;
   list-style-type: disc;
   color: #000000;
   font-weight: 300;
@@ -422,7 +427,7 @@ a {
 }
 .guarantee .container .guarantee_main h1 {
   line-height: 100%;
-  font-size: 86px;
+  font-size: 5.375rem;
   max-width: 60%;
 }
 .guarantee .container .guarantee_main img {
@@ -445,7 +450,7 @@ a {
 .guarantee .container .guarantee__bottom .guarantee__grid .recomended-grid-1 h3 {
   margin-top: 10px;
   color: #bbb8b8;
-  font-size: 18px;
+  font-size: 1.125rem;
   max-width: 40%;
   text-transform: uppercase;
   font-weight: 400;
@@ -471,10 +476,10 @@ a {
 }
 .guarantee .container .guarantee__bottom .guarantee__grid .guarantee__item-grid-2 h2 {
   font-weight: 500;
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 .guarantee .container .guarantee__bottom .guarantee__grid .guarantee__item-grid-2 p {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 .guarantee .container .guarantee__bottom .guarantee__grid .guarantee__item-grid-3 {
   grid-column: 3/3;
@@ -497,10 +502,10 @@ a {
 }
 .guarantee .container .guarantee__bottom .guarantee__grid .guarantee__item-grid-3 h2 {
   font-weight: 500;
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 .guarantee .container .guarantee__bottom .guarantee__grid .guarantee__item-grid-3 p {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 .guarantee .container .guarantee__bottom .guarantee__grid .guarantee__item-grid-4 {
   grid-column: 1/2;
@@ -523,10 +528,10 @@ a {
 }
 .guarantee .container .guarantee__bottom .guarantee__grid .guarantee__item-grid-4 h2 {
   font-weight: 500;
-  font-size: 30px;
+  font-size: 1.875rem;
 }
 .guarantee .container .guarantee__bottom .guarantee__grid .guarantee__item-grid-4 p {
-  font-size: 20px;
+  font-size: 1.25rem;
 }
 .guarantee .container .guarantee__bottom .guarantee__grid .recomended__guarantee-grid-5 {
   grid-column: 2/4;
@@ -549,7 +554,7 @@ a {
 }
 .guarantee .container .guarantee__bottom .guarantee__grid .recomended__guarantee-grid-5 h1 {
   font-weight: 600;
-  font-size: 48px;
+  font-size: 3rem;
   color: #99A8BF;
   min-width: 100%;
 }
@@ -603,7 +608,7 @@ a {
   gap: 5vh;
 }
 .slider-block .container .slider .slider__items .slider__item .slider__functional .content h1 {
-  font-size: 48px;
+  font-size: 3rem;
   color: #FFFFFF;
   line-height: 62.4px;
   max-width: 70%;
@@ -611,24 +616,24 @@ a {
 .slider-block .container .slider .slider__items .slider__item .slider__functional .content h2 {
   font-family: Hauora-300;
   font-weight: 300;
-  font-size: 24px;
+  font-size: 1.5rem;
   color: #fFFFFF;
   max-width: 65%;
 }
 .slider-block .container .slider .slider__items .slider__item .slider__functional .content p {
   font-weight: 500;
-  font-size: 16px;
+  font-size: 1.25rem;
   color: #FFFFFF;
   max-width: 45%;
 }
 .slider-block .container .slider .slider__items .slider__item .slider__functional .price__buttons {
-  margin-top: 150px;
+  margin-top: 100px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 .slider-block .container .slider .slider__items .slider__item .slider__functional .price__buttons h1 {
-  font-size: 48px;
+  font-size: 3rem;
   color: #FFFFFF;
   line-height: 62.4px;
   max-width: 100%;
@@ -673,17 +678,17 @@ a {
 .contacts .container .socials__side h3 {
   text-transform: uppercase;
   color: #bbb8b8;
-  font-size: 16px;
+  font-size: 1rem;
   font-weight: 400;
 }
 .contacts .container .socials__side h1 {
   color: #000000;
-  font-size: 48px;
+  font-size: 3rem;
   line-height: 62.4px;
   max-width: 90%;
 }
 .contacts .container .socials__side p {
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 31.2px;
   color: #000000;
 }
@@ -726,14 +731,14 @@ a {
   background: transparent;
   outline: none;
   color: #000000;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 .contacts .container .form__side .field textarea {
   max-width: 100%;
 }
 .contacts .container .form__side .field label {
   color: #000;
-  font-size: 22px;
+  font-size: 1.375rem;
   padding: 10px 0;
 }
 .contacts .container .form__side .btn {
@@ -756,19 +761,18 @@ a {
   gap: 0;
 }
 .items .container .photo__side {
-  max-width: 100%;
-  max-height: 995px;
-  width: 100%;
+  max-width: 1000px;
+  min-height: 995px;
   height: 100%;
+  width: 100%;
 }
 .items .container .photo__side img {
-  min-width: 100%;
-  max-height: 995px;
+  max-width: 100%;
+  min-height: 995px;
 }
 .items .container .content__side {
   background: rgb(17, 14, 44);
   max-height: 995px;
-  max-width: 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -777,31 +781,31 @@ a {
 }
 .items .container .content__side h3 {
   padding-top: 40px;
-  font-size: 20px;
+  font-size: 1, 25rem;
   color: #FFFFFF;
   text-transform: uppercase;
   font-weight: 300;
 }
 .items .container .content__side h1 {
-  font-size: 86px;
+  font-size: 5.375rem;
   color: #FFFFFF;
 }
 .items .container .content__side p {
-  font-size: 30px;
+  font-size: 1.875rem;
   max-width: 70%;
   color: rgb(82, 79, 103);
   letter-spacing: -2%;
   font-family: Hauora-500;
 }
 .items .container .content__side ul {
-  margin-left: 30px;
+  margin-left: 1.875rem;
   display: flex;
   flex-direction: column;
   gap: 30px;
 }
 .items .container .content__side ul li {
   list-style-type: disc;
-  font-size: 20px;
+  font-size: 1, 25rem;
   color: #FFFFFF;
   font-weight: 300;
 }
@@ -811,7 +815,7 @@ a {
   justify-content: space-between;
 }
 .items .container .content__side .price__bottom .price {
-  font-size: 48px;
+  font-size: 3rem;
   font-family: Hauora-600;
   letter-spacing: -2%;
   color: #FFFFFF;
@@ -842,14 +846,14 @@ a {
   gap: 5%;
 }
 .car__motorcycle .container .car h1 {
-  font-size: 86px;
+  font-size: 5.375rem;
   line-height: 96px;
   letter-spacing: -3%;
   font-weight: 500;
   color: #FFFFFF;
 }
 .car__motorcycle .container .car p {
-  font-size: 28px;
+  font-size: 1.75rem;
   line-height: 41.6px;
   letter-spacing: -2%;
   font-weight: 400;
@@ -862,7 +866,7 @@ a {
   padding: 18px 32px;
   border-radius: 6px 6px 18px 6px;
   border: 2px solid white;
-  font-size: 16px;
+  font-size: 1rem;
   color: #FFFFFF;
   max-width: 302px;
   text-align: center;
@@ -882,14 +886,14 @@ a {
   gap: 5%;
 }
 .car__motorcycle .container .motorcycle h1 {
-  font-size: 86px;
+  font-size: 5.375rem;
   line-height: 96px;
   letter-spacing: -3%;
   font-weight: 500;
   color: #FFFFFF;
 }
 .car__motorcycle .container .motorcycle p {
-  font-size: 28px;
+  font-size: 1.75rem;
   line-height: 41.6px;
   letter-spacing: -2%;
   font-weight: 400;
@@ -902,7 +906,7 @@ a {
   padding: 18px 32px;
   border-radius: 6px 6px 18px 6px;
   border: 2px solid white;
-  font-size: 16px;
+  font-size: 1rem;
   color: #FFFFFF;
   max-width: 302px;
   text-align: center;
@@ -922,9 +926,9 @@ a {
   margin: 0 auto;
 }
 .about__ramki .container .header__text {
-  font-size: 86px;
+  font-size: 5rem;
   color: #000000;
-  max-width: 70%;
+  max-width: 80%;
 }
 .about__ramki .container .grid__mesh {
   margin-top: 10vh;
@@ -941,10 +945,11 @@ a {
   grid-row: 1/3;
 }
 .about__ramki .container .grid__mesh .grid__container-text p {
-  font-size: 22px;
+  font-size: 1.375rem;
 }
 .about__ramki .container .grid__mesh .grid__container-text p span {
   font-family: Hauora-600;
+  font-size: 1.375rem;
 }
 .about__ramki .container .grid__mesh .grid__container-1 {
   grid-column: 2/3;
@@ -972,14 +977,14 @@ a {
 }
 .about__ramki .container .grid__mesh .grid__container-1 .text h3 {
   font-weight: 400;
-  font-size: 24px;
-  max-width: 70%;
+  font-size: 22px;
+  max-width: 100%;
   align-items: center;
 }
 .about__ramki .container .grid__mesh .grid__container-1 .text p {
   color: #bbb8b8;
-  font-size: 16px;
-  max-width: 80%;
+  font-size: 1.25rem;
+  max-width: 100%;
 }
 .about__ramki .container .grid__mesh .grid__container-1 .text p::before {
   content: "-";
@@ -1010,13 +1015,13 @@ a {
 }
 .about__ramki .container .grid__mesh .grid__container-2 .text h3 {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5rem;
   max-width: 100%;
   align-items: center;
 }
 .about__ramki .container .grid__mesh .grid__container-2 .text p {
   color: #bbb8b8;
-  font-size: 16px;
+  font-size: 1.25rem;
   max-width: 70%;
 }
 .about__ramki .container .grid__mesh .grid__container-2 .text p::before {
@@ -1048,13 +1053,13 @@ a {
 }
 .about__ramki .container .grid__mesh .grid__container-3 .text h3 {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5rem;
   max-width: 100%;
   align-items: center;
 }
 .about__ramki .container .grid__mesh .grid__container-3 .text p {
   color: #bbb8b8;
-  font-size: 16px;
+  font-size: 1.25rem;
   max-width: 80%;
 }
 .about__ramki .container .grid__mesh .grid__container-3 .text p::before {
@@ -1086,14 +1091,14 @@ a {
 }
 .about__ramki .container .grid__mesh .grid__container-4 .text h3 {
   font-weight: 400;
-  font-size: 32px;
+  font-size: 2rem;
   max-width: 50%;
   align-items: center;
   color: #99A8BF;
 }
 .about__ramki .container .grid__mesh .grid__container-4 .text p {
   color: #99A8BF;
-  font-size: 22px;
+  font-size: 1.5rem;
   max-width: 50%;
 }
 .about__ramki .container .grid__mesh .grid__container-4 .text p::before {
@@ -1126,13 +1131,13 @@ a {
 }
 .about__ramki .container .grid__mesh .grid__container-5 .text h3 {
   font-weight: 400;
-  font-size: 24px;
+  font-size: 1.5rem;
   max-width: 100%;
   align-items: center;
 }
 .about__ramki .container .grid__mesh .grid__container-5 .text p {
   color: #bbb8b8;
-  font-size: 16px;
+  font-size: 1.25rem;
   max-width: 60%;
 }
 .about__ramki .container .grid__mesh .grid__container-5 .text p::before {
@@ -1164,7 +1169,7 @@ a {
 }
 .install__cars .container .cars__container .skoda h1 {
   color: #FFFFFF;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 600;
 }
 .install__cars .container .cars__container .skoda img {
@@ -1192,7 +1197,7 @@ a {
 }
 .install__cars .container .cars__container .tesla-1 h1 {
   color: #FFFFFF;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 600;
 }
 .install__cars .container .cars__container .tesla-1 img {
@@ -1220,7 +1225,7 @@ a {
 }
 .install__cars .container .cars__container .tesla-2 h1 {
   color: #FFFFFF;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 600;
 }
 .install__cars .container .cars__container .tesla-2 img {
@@ -1248,7 +1253,7 @@ a {
 }
 .install__cars .container .cars__container .skoda-2 h1 {
   color: #FFFFFF;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 600;
 }
 .install__cars .container .cars__container .skoda-2 img {
@@ -1276,7 +1281,7 @@ a {
 }
 .install__cars .container .cars__container .skoda-3 h1 {
   color: #FFFFFF;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 600;
 }
 .install__cars .container .cars__container .skoda-3 img {
@@ -1303,7 +1308,7 @@ a {
 }
 .install__cars .container .cars__container .skoda-4 h1 {
   color: #FFFFFF;
-  font-size: 48px;
+  font-size: 3rem;
   font-weight: 600;
 }
 .install__cars .container .cars__container .skoda-4 img {
@@ -1337,12 +1342,12 @@ a {
 }
 .answer-question .container .left__side h3 {
   color: #bbb8b8;
-  font-size: 16px;
+  font-size: 1rem;
   text-transform: uppercase;
   font-weight: 300;
 }
 .answer-question .container .left__side h1 {
-  font-size: 48px;
+  font-size: 3rem;
   max-width: 100%;
   color: #000000;
 }
@@ -1359,7 +1364,7 @@ a {
 }
 .answer-question .container .right__side .accordion-wrapper .accordion {
   cursor: pointer;
-  font-size: 30px;
+  font-size: 1.875rem;
   line-height: 41.6px;
   letter-spacing: -2%;
   color: #bbb8b8;
@@ -1391,7 +1396,7 @@ a {
   color: #000;
 }
 .answer-question .container .right__side .panel {
-  font-size: 22px;
+  font-size: 1.375rem;
   margin-left: 12px;
   padding: 0 18px;
   background-color: white;
@@ -1427,7 +1432,7 @@ a {
 .delivery .container .left__side .text h1 {
   font-family: Hauora-300;
   color: #FFFFFF;
-  font-size: 90px;
+  font-size: 5.625rem;
   max-width: 100%;
   line-height: 86px;
   letter-spacing: -3%;
@@ -1435,7 +1440,7 @@ a {
 }
 .delivery .container .left__side .text H3 {
   font-weight: 300;
-  font-size: 28px;
+  font-size: 1.75rem;
   line-height: 41.6px;
   letter-spacing: -2%;
   color: #99A8BF;
@@ -1471,7 +1476,7 @@ a {
 }
 .delivery .container .right__side .flex__box .flex__item h2 {
   font-weight: 500;
-  font-size: 30px;
+  font-size: 1.875rem;
   line-height: 41.6px;
   letter-spacing: -2%;
   color: #FFFFFF;
@@ -1480,7 +1485,7 @@ a {
   max-width: 70%;
   font-family: Hauora-300;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 31.2px;
   color: #FFFFFF;
 }
@@ -1503,7 +1508,7 @@ a {
 }
 .footer .container .socials__side h1 {
   color: #FFFFFF;
-  font-size: 48px;
+  font-size: 3rem;
   line-height: 62.4px;
   max-width: 90%;
 }
@@ -1531,7 +1536,7 @@ a {
   color: #FFFFFF;
 }
 .footer .container .socials__side p {
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 31.2px;
   color: #000000;
 }
@@ -1540,7 +1545,7 @@ a {
 }
 .footer .container .socials__side .gkrf p {
   max-width: 40%;
-  font-size: 16px;
+  font-size: 1rem;
   color: #6f6b6b;
 }
 .footer .right__side {
@@ -1574,14 +1579,14 @@ a {
   background: transparent;
   outline: none;
   color: #000000;
-  font-size: 18px;
+  font-size: 1.125rem;
 }
 .footer .right__side .form__side-footer .field textarea {
   max-width: 100%;
 }
 .footer .right__side .form__side-footer .field label {
   color: rgb(150, 143, 143);
-  font-size: 22px;
+  font-size: 1.375rem;
   padding: 10px 0;
 }
 .footer .right__side .form__side-footer .btn {
@@ -1591,7 +1596,7 @@ a {
   border-radius: 6px 6px 18px 6px;
   text-align: center;
   max-width: 340px;
-  font-size: 20px;
+  font-size: 1.25rem;
   color: #FFFFFF;
 }
 .footer .right__side .form__side-footer .btn:hover {
@@ -1622,4 +1627,148 @@ a {
 .footer .right__side .contacts .mini__logo {
   width: 71px;
   height: 40px;
+}
+
+@media screen and (max-width: 1400px) {
+  * {
+    font-size: 14px;
+  }
+  .wrapper main .header .container {
+    max-width: 100vw;
+    gap: 5vw;
+  }
+  .wrapper main .header .container .header__nav ul {
+    gap: 20px;
+  }
+  .wrapper main .hero .container {
+    max-width: 100vw;
+  }
+  .wrapper main .hero .container .hero__text h1 {
+    max-width: 100%;
+    font-size: 120px;
+  }
+  .wrapper main .hero .container .hero__bottom {
+    margin-top: 0;
+  }
+  .wrapper main .hero .container .hero__bottom .text {
+    margin-left: 20vw;
+  }
+  .wrapper .slider-block .container {
+    max-width: 100vw;
+  }
+  .wrapper .slider-block .container .slider__items .slider__item .slider__functional .content {
+    gap: 0;
+  }
+  .wrapper .delivery .container .right__side .flex__box {
+    max-width: 90%;
+    gap: 50px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  * {
+    font-size: 10px;
+  }
+  .wrapper main .header {
+    height: 80px;
+  }
+  .wrapper main .hero .container .hero__text h1 {
+    max-width: 75%;
+    font-size: 75px;
+    font-weight: 300;
+  }
+  .wrapper main .hero .container .hero__bottom {
+    align-items: end;
+  }
+  .wrapper main .hero .container .hero__bottom .text p {
+    font-size: 18px;
+    max-width: 100%;
+  }
+  .wrapper main .section__about-us .container {
+    max-width: 100vw;
+  }
+  .wrapper main .section__about-us .container .right__menu {
+    margin-top: 30%;
+  }
+  .wrapper main .advantages .advantages__right-side .bottom-side {
+    max-height: 100%;
+    gap: 15%;
+  }
+  .wrapper main .slider-block .container .slider__items .slider__item .slider__functional .content {
+    gap: 5vh;
+  }
+  .wrapper main .delivery .container .left__side {
+    width: 60%;
+  }
+  .wrapper main .delivery .container .right__side {
+    min-width: 50%;
+  }
+  .wrapper main .delivery .container .right__side .flex__box {
+    max-width: 70%;
+    gap: 80px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .wrapper {
+    max-width: 100vw;
+  }
+  .wrapper main {
+    background: #ffffff;
+  }
+  .wrapper main .top__header .discount p {
+    font-size: 8px;
+  }
+  .wrapper main .top__header a.btn {
+    font-size: 12px;
+  }
+  .wrapper main .header .container {
+    max-width: 414px;
+    margin: 0 auto;
+  }
+  .wrapper main .header .container .header__logo {
+    text-align: center;
+  }
+  .wrapper main .header .container .header__nav {
+    display: none;
+  }
+  .wrapper main .header .container .header__btns .btn {
+    display: none;
+  }
+  .wrapper main .hero {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+  }
+  .wrapper main .hero .container .hero__text h1 {
+    color: #000;
+    font-size: 60px;
+    text-transform: uppercase;
+  }
+  .wrapper main .hero .container .hero__bottom {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .wrapper main .hero .container .hero__bottom .buttons {
+    margin-top: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .wrapper main .hero .container .hero__bottom .buttons a.order {
+    background: #000;
+    color: #FFFFFF;
+  }
+  .wrapper main .hero .container .hero__bottom .buttons a.consultation {
+    background-color: #000;
+    color: #FFFFFF;
+  }
+  .wrapper main .hero .container .hero__bottom .text {
+    display: flex;
+    justify-content: center;
+  }
+  .wrapper main .hero .container .hero__bottom .text p {
+    color: #000;
+    text-align: center;
+  }
 }/*# sourceMappingURL=main.css.map */

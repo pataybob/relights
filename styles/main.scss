@@ -40,6 +40,9 @@
         }
     }
 
+
+@import url(adaptive.css);
+
 @import url(fonts.css);
 *{
     box-sizing: border-box;
@@ -47,6 +50,7 @@
     margin: 0;
     padding: 0;
     color: #000000;
+    font-size: 16px;
 
 
 }
@@ -85,13 +89,13 @@ a{
             gap: 40px;
             .discount p{
                 font-family: Hauora-300;
-                font-size: 14xpx;
+                font-size: 1rem;
                 color: #FFFFFF;
             }
             a.btn{
                 text-transform: uppercase;
                 color: #bbb8b8;
-                font-size: 18px;  
+                font-size: 1,125rem;  
                 letter-spacing: 0.8px;
                 &:hover{
                     color: #FFFFFF;
@@ -129,7 +133,7 @@ a{
                         display: flex;
                         gap: 60px;
                         li{
-                            font-size: 18px;
+                            font-size: 1,5rem;
                             font-family: Hauora-500;
                             margin: 0;
                             padding: 0;
@@ -191,7 +195,7 @@ a{
                 margin: 0 auto;
                 .hero__text{
                     h1{
-                        font-size: 135px;
+                        font-size: 8rem;
                         color: #FFFFFF;
                         max-width: 60%;
                         line-height: 100%;
@@ -205,7 +209,7 @@ a{
                     justify-content: space-around;
                     width: 100%;
                     .buttons{
-                        margin-top: 300px; //сделать адаптивно под меньшие размеры
+                        margin-top: 400px; //сделать адаптивно под меньшие размеры
                         display: flex;
                         gap: 40px;
                         a.order{
@@ -215,7 +219,7 @@ a{
 
                             width: 338px;
                             height: 18px;
-                            font-size: 16px;
+                            font-size: 1rem;
 
                             padding: 32px 18px;
                             border-radius: 6px 6px 18px 6px;
@@ -237,7 +241,7 @@ a{
 
                             width: 338px;
                             height: 24px;
-                            font-size: 16px;
+                            font-size: 1rem;
                             
                             padding: 32px 24px;
                             border-radius: 6px 6px 18px 6px;
@@ -260,7 +264,7 @@ a{
         }
         .section__about-us{
             display: flex;
-            margin-top: 20vh;
+            margin-top: 25vh;
             padding: 0 20px;
             .container{
                 max-width: 1760px;
@@ -276,7 +280,7 @@ a{
                         flex-direction: column;
                         gap: 10%;
                         .about__logo{
-                            font-size: 84px;
+                            font-size: 5rem;
                             line-height: 100%;
                             width: 150%;
                             
@@ -286,13 +290,17 @@ a{
                             margin-top: 10%;
                             font-family: Hauora-400;
                             
-                            font-size: 20px;
+                            
                             display: flex;
                             flex-direction: column;
                             gap: 20px;
                             width: 45%;
                             span{
                                 font-family: Hauora-600;
+                                font-size: 1.25rem;
+                            }
+                            p{
+                                font-size: 1.25rem;
                             }
 
 
@@ -369,12 +377,12 @@ a{
                         margin-top: 5vh;
                         h3{
                             color: #fFFFFF;
-                            font-size: 18px;
+                            font-size: 1.125rem;
                             text-transform: uppercase;
                             font-weight: 300;
                         }
                         h1{
-                            font-size: 80px;
+                            font-size: 5rem;
                             color: #FFFFFF;
                             width: 90%;
                             line-height: 100%;
@@ -389,7 +397,7 @@ a{
                         p{
                             font-family: Hauora-300;
                             color: #fFFFFF;
-                            font-size: 22px;
+                            font-size: 1.375rem;
                             max-width: 55%;
                             font-weight: 300;
                         }
@@ -403,7 +411,7 @@ a{
 
                             width: 338px;
                             height: 24px;
-                            font-size: 16px;
+                            font-size: 1rem;
                             
                             padding: 24px 20px;
                             border-radius: 6px 6px 18px 6px;
@@ -441,7 +449,7 @@ a{
                     background: #FFFFFF;
                     h1{
                         color: #2A1A80;
-                        font-size: 44px;
+                        font-size: 2.75rem;
                         font-family: Hauora-400;
                     }
                     ul{
@@ -453,7 +461,7 @@ a{
                         grid-column-end: auto;
                         gap: 40px;
                         li{
-                            font-size: 20px;
+                            font-size: 1.25rem;
                             list-style-type:disc;
                             color: #000000;
                             font-weight: 300;
@@ -474,7 +482,7 @@ a{
                 justify-content: space-between;
                 h1{
                     line-height: 100%;
-                    font-size: 86px;
+                    font-size: 5.375rem;
                     max-width: 60%;
                 }
                 img{
@@ -496,7 +504,7 @@ a{
                         h3{
                             margin-top: 10px;
                             color: #bbb8b8;
-                            font-size: 18px;
+                            font-size: 1.125rem;
                             max-width: 40%;
                             text-transform: uppercase;
                             font-weight: 400;
@@ -523,10 +531,10 @@ a{
                     }
                     h2{
                         font-weight: 500;
-                        font-size: 30px;
+                        font-size: 1.875rem;
                     }
                     p{
-                        font-size: 20px;
+                        font-size: 1.25rem;
                     }
                 }
                 .guarantee__item-grid-3{
@@ -550,10 +558,10 @@ a{
                     }
                     h2{
                         font-weight: 500;
-                        font-size: 30px;
+                        font-size: 1.875rem;
                     }
                     p{
-                        font-size: 20px;
+                        font-size: 1.25rem;
                     }
                 }
                 .guarantee__item-grid-4{
@@ -577,10 +585,10 @@ a{
                     }
                     h2{
                         font-weight: 500;
-                        font-size: 30px;
+                        font-size: 1.875rem;
                     }
                     p{
-                        font-size: 20px;
+                        font-size: 1.25rem;
                     }
                 }
                 .recomended__guarantee-grid-5{
@@ -604,7 +612,7 @@ a{
                     }
                     h1{
                         font-weight: 600;
-                        font-size: 48px;
+                        font-size: 3rem;
                         color: #99A8BF;
                         min-width: 100%;
                     }
@@ -663,7 +671,7 @@ a{
                               gap: 5vh;
 
                               h1{
-                                  font-size: 48px ;
+                                  font-size: 3rem ;
                                   color: #FFFFFF;
                                   line-height: 62.4px;
                                   max-width: 70%;
@@ -671,24 +679,24 @@ a{
                               h2{
                                   font-family: Hauora-300;
                                   font-weight: 300;
-                                  font-size: 24px;
+                                  font-size: 1.5rem;
                                   color: #fFFFFF;
                                   max-width: 65%;
                               }
                               p{
                                   font-weight: 500;
-                                  font-size: 16px;
+                                  font-size: 1.25rem;
                                   color: #FFFFFF;
                                   max-width: 45%;
                               }
                           }
                           .price__buttons{
-                              margin-top: 150px;
+                              margin-top: 100px;
                               display: flex;
                               flex-direction: row;
                               justify-content: space-between;
                               h1{
-                                  font-size: 48px ;
+                                  font-size: 3rem ;
                                   color: #FFFFFF;
                                   line-height: 62.4px;
                                   max-width: 100%;
@@ -738,17 +746,17 @@ a{
                 h3{
                     text-transform: uppercase;
                     color: #bbb8b8;
-                    font-size: 16px;
+                    font-size: 1rem;
                     font-weight: 400;
                 }
                 h1{
                     color: #000000;
-                    font-size: 48px;
+                    font-size: 3rem;
                     line-height: 62.4px;
                     max-width: 90%;
                 }
                 p{
-                    font-size: 20px ;
+                    font-size: 1.25rem ;
                     line-height: 31.2px;
                     color: #000000;
                 }
@@ -798,7 +806,7 @@ a{
                         outline: none;
                       
                         color: #000000;
-                        font-size: 18px;
+                        font-size: 1.125rem;
                     }
                     textarea{
                         @extend %input;
@@ -806,7 +814,7 @@ a{
                     }
                     label{
                         color: #000;
-                        font-size: 22px;
+                        font-size: 1.375rem;
                         padding: 10px 0;
                     }
                 }
@@ -832,51 +840,50 @@ a{
             flex-direction: row;
             gap: 0;
             .photo__side{
-                max-width: 100%;
-                max-height: 995px;
-                width: 100%;
+                max-width: 1000px;
+                min-height: 995px;
                 height: 100%;
+                width: 100%;
                 img{
-                    min-width: 100%;
-                    max-height: 995px;
+                    max-width: 100%;
+                    min-height: 995px;
                 }
             }
             .content__side{
                 background: rgb(17, 14, 44);
                 max-height: 995px;
-                max-width: 100%;
-
                 width: 100%;
+
                 display: flex;
                 flex-direction: column;
                 padding-left: 50px;
                 gap: 80px;
                 h3{
                     padding-top: 40px;
-                    font-size: 20px;
+                    font-size: 1,25rem;
                     color: #FFFFFF;
                     text-transform: uppercase;
                     font-weight: 300;
                 }
                 h1{
-                  font-size: 86px;
+                  font-size: 5.375rem;
                   color: #FFFFFF  
                 }
                 p{
-                    font-size: 30px;
+                    font-size: 1.875rem;
                     max-width: 70%;
                     color: rgb(82, 79, 103);
                     letter-spacing: -2%;
                     font-family: Hauora-500;
                 }
                 ul{
-                    margin-left: 30px;
+                    margin-left: 1.875rem;
                     display: flex;
                     flex-direction: column;
                     gap: 30px;
                     li{
                         list-style-type:disc;
-                        font-size: 20px;
+                        font-size: 1,25rem;
                         color: #FFFFFF;
                         font-weight: 300;
 
@@ -888,7 +895,7 @@ a{
                     justify-content: space-between;
                     
                     .price{
-                        font-size: 48px;
+                        font-size: 3rem;
                         font-family: Hauora-600;
                         letter-spacing: -2%;
                         color: #FFFFFF;
@@ -924,14 +931,14 @@ a{
                 flex-direction: column;
                 gap: 5%;
                 h1{
-                    font-size: 86px;
+                    font-size: 5.375rem;
                     line-height: 96px;
                     letter-spacing: -3%;
                     font-weight: 500;
                     color: #FFFFFF;
                 }
                 p{
-                    font-size: 28px;
+                    font-size: 1.75rem;
                     line-height: 41.6px;
                     letter-spacing: -2%;
                     font-weight: 400;
@@ -946,7 +953,7 @@ a{
                     border: 2px solid white;
 
 
-                    font-size: 16px;
+                    font-size: 1rem;
                     color: #FFFFFF;
                     max-width: 302px;
                     text-align: center;
@@ -970,14 +977,14 @@ a{
                 flex-direction: column;
                 gap: 5%;
                 h1{
-                    font-size: 86px;
+                    font-size: 5.375rem;
                     line-height: 96px;
                     letter-spacing: -3%;
                     font-weight: 500;
                     color: #FFFFFF;
                 }
                 p{
-                    font-size: 28px;
+                    font-size: 1.75rem;
                     line-height: 41.6px;
                     letter-spacing: -2%;
                     font-weight: 400;
@@ -992,7 +999,7 @@ a{
                     border: 2px solid white;
 
 
-                    font-size: 16px;
+                    font-size: 1rem;
                     color: #FFFFFF;
                     max-width: 302px;
                     text-align: center;
@@ -1014,9 +1021,9 @@ a{
             max-width: 1760px;
             margin: 0 auto;
             .header__text{
-                font-size: 86px;
+                font-size: 5rem;
                 color: #000000;
-                max-width: 70%;
+                max-width: 80%;
             }
             .grid__mesh{
                 margin-top: 10vh;
@@ -1036,9 +1043,10 @@ a{
                     grid-column: 1/2;
                     grid-row: 1/3;
                     p{
-                        font-size: 22px ;
+                        font-size: 1.375rem ;
                         span{
                             font-family: Hauora-600;
+                            font-size: 1.375rem ;
                         }
                     }
 
@@ -1073,14 +1081,14 @@ a{
                         gap: 30px;
                         h3{
                             font-weight: 400;
-                            font-size: 24px ;
-                            max-width: 70%;
+                            font-size: 22px ;
+                            max-width: 100%;
                             align-items: center;
                         }
                         p{
                             color: #bbb8b8;
-                            font-size: 16px;
-                            max-width: 80%;
+                            font-size: 1.25rem;
+                            max-width: 100%;
                             &::before{
                                 content: "-";
                             }
@@ -1116,13 +1124,13 @@ a{
                         gap: 30px;
                         h3{
                             font-weight: 400;
-                            font-size: 24px ;
+                            font-size: 1.5rem ;
                             max-width: 100%;
                             align-items: center;
                         }
                         p{
                             color: #bbb8b8;
-                            font-size: 16px;
+                            font-size: 1.25rem;
                             max-width: 70%;
                             &::before{
                                 content: "-";
@@ -1159,13 +1167,13 @@ a{
                         gap: 30px;
                         h3{
                             font-weight: 400;
-                            font-size: 24px ;
+                            font-size: 1.5rem ;
                             max-width: 100%;
                             align-items: center;
                         }
                         p{
                             color: #bbb8b8;
-                            font-size: 16px;
+                            font-size: 1.25rem;
                             max-width: 80%;
                             &::before{
                                 content: "-";
@@ -1202,14 +1210,14 @@ a{
                         gap: 30px;
                         h3{
                             font-weight: 400;
-                            font-size: 32px ;
+                            font-size: 2rem ;
                             max-width: 50%;
                             align-items: center;
                             color: #99A8BF;
                         }
                         p{
                             color: #99A8BF;
-                            font-size: 22px;
+                            font-size: 1.5rem;
                             max-width: 50%;
                             &::before{
                                 content: "-";
@@ -1248,13 +1256,13 @@ a{
                         gap: 30px;
                         h3{
                             font-weight: 400;
-                            font-size: 24px ;
+                            font-size: 1.5rem ;
                             max-width: 100%;
                             align-items: center;
                         }
                         p{
                             color: #bbb8b8;
-                            font-size: 16px;
+                            font-size: 1.25rem;
                             max-width: 60%;
                             &::before{
                                 content: "-";
@@ -1290,7 +1298,7 @@ a{
                     padding: 20px 30px;
                     h1{
                         color: #FFFFFF;
-                        font-size: 48px;
+                        font-size: 3rem;
                         font-weight: 600;
                     }
                     img{
@@ -1319,7 +1327,7 @@ a{
                     gap: 31%;
                     h1{
                         color: #FFFFFF;
-                        font-size: 48px;
+                        font-size: 3rem;
                         font-weight: 600;
                     }
                     img{
@@ -1348,7 +1356,7 @@ a{
                     gap: 31%;
                     h1{
                         color: #FFFFFF;
-                        font-size: 48px;
+                        font-size: 3rem;
                         font-weight: 600;
                     }
                     img{
@@ -1377,7 +1385,7 @@ a{
                     gap: 31%;
                     h1{
                         color: #FFFFFF;
-                        font-size: 48px;
+                        font-size: 3rem;
                         font-weight: 600;
                     }
                     img{
@@ -1406,7 +1414,7 @@ a{
                     gap: 30vh;
                     h1{
                         color: #FFFFFF;
-                        font-size: 48px;
+                        font-size: 3rem;
                         font-weight: 600;
                     }
                     img{
@@ -1434,7 +1442,7 @@ a{
                     padding: 50px 30px;
                     h1{                                                                                 
                         color: #FFFFFF;
-                        font-size: 48px;
+                        font-size: 3rem;
                         font-weight: 600;
                     }
                     img{
@@ -1469,12 +1477,12 @@ a{
                 gap: 50px;
                 h3{
                     color: #bbb8b8;
-                    font-size: 16px;
+                    font-size: 1rem;
                     text-transform: uppercase;
                     font-weight: 300;
                 }
                 h1{
-                    font-size: 48px;
+                    font-size: 3rem;
                     max-width: 100%;
                     color: #000000;
                 }
@@ -1492,7 +1500,7 @@ a{
                 .accordion-wrapper{
                     .accordion{
                         cursor: pointer;
-                        font-size: 30px;
+                        font-size: 1.875rem;
                         line-height: 41.6px;
                         letter-spacing: -2%;
                         color: #bbb8b8;
@@ -1526,7 +1534,7 @@ a{
                         }
                     }
                     .panel{
-                        font-size: 22px;
+                        font-size: 1.375rem;
                         margin-left: 12px;
                         padding: 0 18px;
                         background-color: white;
@@ -1561,7 +1569,7 @@ a{
                             font-family: Hauora-300;
 
                             color:#FFFFFF;
-                            font-size: 90px;
+                            font-size: 5.625rem;
                             max-width: 100%;
                             line-height: 86px;
                             letter-spacing: -3%;
@@ -1569,7 +1577,7 @@ a{
                         }
                         H3{
                             font-weight: 300;
-                            font-size: 28px ;
+                            font-size: 1.75rem ;
                             line-height: 41.6px;
                             letter-spacing: -2%;
                             color: #99A8BF;
@@ -1604,7 +1612,7 @@ a{
                             gap: 20px;
                             h2{
                                 font-weight: 500;
-                                font-size: 30px;
+                                font-size: 1.875rem;
                                 line-height: 41.6px;
                                 letter-spacing: -2%;
                                 color: #FFFFFF;
@@ -1613,7 +1621,7 @@ a{
                                 max-width: 70%;
                                 font-family: Hauora-300;
                                 font-weight: 300;
-                                font-size: 20px;
+                                font-size: 1.25rem;
                                 line-height: 31.2px;
                                 color: #FFFFFF;
                             }
@@ -1638,7 +1646,7 @@ a{
                     gap: 70px;
                     h1{
                         color: #FFFFFF;
-                        font-size: 48px;
+                        font-size: 3rem;
                         line-height: 62.4px;
                         max-width: 90%;
                     }
@@ -1666,7 +1674,7 @@ a{
                         }
                     }
                     p{
-                        font-size: 20px ;
+                        font-size: 1.25rem ;
                         line-height: 31.2px;
                         color: #000000;
                     }
@@ -1674,7 +1682,7 @@ a{
                         margin-top: 30vh;
                         p{
                             max-width: 40%;
-                            font-size: 16px;
+                            font-size: 1rem;
                             color: #6f6b6b;
                         }
                     }
@@ -1714,7 +1722,7 @@ a{
                             outline: none;
                           
                             color: #000000;
-                            font-size: 18px;
+                            font-size: 1.125rem;
                         }
                         textarea{
                             @extend %input;
@@ -1722,7 +1730,7 @@ a{
                         }
                         label{
                             color: rgb(150, 143, 143);
-                            font-size: 22px;
+                            font-size: 1.375rem;
                             padding: 10px 0;
                         }
                     }
@@ -1735,7 +1743,7 @@ a{
     
                         max-width: 340px;
     
-                        font-size: 20px;
+                        font-size: 1.25rem;
                         color: #FFFFFF;
                         &:hover{
                             transition: all 0.5s ease;
@@ -1772,11 +1780,249 @@ a{
 
             
         }
+
+        @media screen and (max-width: 1400px) {
+            *{
+                font-size: 14px;
+            }
+            .wrapper{
+                main{
+                    .header{
+                        .container{
+                            max-width: 100vw;
+                            gap: 5vw;
+                            .header__nav{
+                                ul{
+                                    gap: 20px;
+                                }
+                            }
+                            
+                        }
+                    }
+                    .hero{
+                        .container{
+                            max-width: 100vw;
+                            .hero__text{
+                                h1{
+                                    max-width: 100%;
+                                    font-size: 120px;
+                                }
+                            }
+                            .hero__bottom{
+                                margin-top: 0;
+                                .text{
+                                    margin-left: 20vw;
+                                }
+                            }
+                        }
+                    }
+                }
+                .slider-block{
+                    .container{
+                        max-width: 100vw;
+                        .slider__items{
+                            .slider__item{
+                                .slider__functional{
+                                    .content{
+                                        gap: 0;
+                                    }
+                                }
+
+                            }
+                        }
+                    }
+                }
+                .delivery{
+                    .container{
+                        .right__side{
+                            .flex__box{
+                                max-width: 90%;
+                                gap: 50px;
+                            }
+                        }
+                    }
+                }
+            }
         
+            }
+        
+            @media screen and (max-width: 1200px) {
+                *{
+                    font-size: 10px;
+                }
+                .wrapper{
+
+                    main{  
+                        .header{
+                            height: 80px;
+                            .container{
+                                
+                            }
+                        }
+                        .hero{
+                            .container{
+                                .hero__text{
+                                    h1{
+                                        max-width: 75%;
+                                        font-size: 75px;
+                                        font-weight: 300;
+                                    }
+                                }
+                                .hero__bottom{
+                                    align-items: end;
+
+
+                                    .text{
+                                        p{
+                                            font-size: 18px;
+                                            max-width: 100%;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .section__about-us{
+                            .container{
+                                max-width: 100vw;
+                                .left__menu{
+
+                                }
+                                .right__menu{
+                                    margin-top: 30%;
+                                }
+                            }
+                        }
+                        .advantages{
+                                .advantages__right-side{
+                                    .bottom-side{
+                                        max-height: 100%;
+                                        gap: 15%;
+                                    }
+                                }
+                            
+                        }
+                        .slider-block{
+                            .container{
+                                .slider__items{
+                                    .slider__item{
+                                        .slider__functional{
+                                            .content{
+                                                gap: 5vh;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                        .delivery{
+                            .container{
+                                .left__side{
+                                    width: 60%;
+                                }
+                                .right__side{
+                                    min-width: 50%;
+                                    .flex__box{
+                                        max-width: 70%;
+                                        gap: 80px;
+                                    }
+                                }
+                            }
+
+                        }
+                    }
+                    
+                }
+        
+            }
+        
+            @media screen and (max-width: 1000px) {
+
+        
+            }
+        
+            @media screen and (max-width: 768px) {
+        
+            }
+            @media screen and (max-width: 480px) {
+                .wrapper{
+                    max-width: 100vw;
+                    main{
+                        background:(#ffffff);
+                    
+                    .top__header{
+                        .discount p{
+                            font-size: 8px;
+                        }
+                        a.btn{
+                            font-size: 12px;
+                        }
+
+                    }
+                    .header{
+                        .container{
+                            max-width: 414px;
+                            margin: 0 auto;
+                            .header__logo{
+                                text-align: center;
+                            }
+                            .header__nav{
+                                display: none;
+                            }
+                            .header__btns{
+                                .btn{
+                                    display: none;
+                                }
+                            }
+                        }
+                    }
+                    .hero{
+                        display: flex;
+                        flex-direction: column;
+                        gap: 50px;
+                        align-items: center;
+                        .container{
+                            .hero__text{
+                                h1{
+                                    color: #000;
+                                    font-size: 60px;
+                                    text-transform: uppercase;
+                                }
+                            }
+                            .hero__bottom{
+                                display: flex;
+                                flex-direction: column-reverse;
+                                
+                                align-items: center;
+                                .buttons{
+                                    margin-top: 0;
+                                    display: flex;
+                                    flex-direction: column;
+                                    gap: 20px;
+
+                                    a.order{
+                                        background: #000;
+                                        color: #FFFFFF;
+                                    }
+                                    a.consultation{
+                                        background-color: #000;
+                                        color: #FFFFFF;
+                                    }
+                                }
+                                .text{
+                                    display: flex;
+                                    justify-content: center;
+                                    p{
+                                    color: #000;
+                                    text-align: center;
+                                    }
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+
     
-
-
-
-    // 'a b c'
-    //                                    'a d e'    
-    //                                    'f g h'; 
