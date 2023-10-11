@@ -1661,6 +1661,10 @@ a{
                             align-items: center;
                             a{
                                 color: #FFFFFF;
+                                &:hover{
+                                    transition: all 0.3s ease;
+                                    color: #2A1A80;
+                                 }
                             }
                         }
                         .mail{
@@ -1670,6 +1674,10 @@ a{
                             gap: 10px;
                             a{
                                 color: #FFFFFF;
+                                 &:hover{
+                                    transition: all 0.3s ease;
+                                    color: #2A1A80;
+                                 }
                             }
                         }
                     }
@@ -1721,12 +1729,13 @@ a{
                             background: transparent;
                             outline: none;
                           
-                            color: #000000;
+                            color: #fff;
                             font-size: 1.125rem;
                         }
                         textarea{
                             @extend %input;
                             max-width: 100%;
+                            color: #fff;
                         }
                         label{
                             color: rgb(150, 143, 143);
@@ -1757,6 +1766,7 @@ a{
                     flex-direction: row;
                     align-items: center;
                     gap: 220px;
+                    margin-top: 150px;
                     .social{
                         display: flex;
                         flex-direction: row;

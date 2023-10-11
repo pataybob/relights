@@ -1526,6 +1526,10 @@ a {
 .footer .container .socials__side .cont .phone a {
   color: #FFFFFF;
 }
+.footer .container .socials__side .cont .phone a:hover {
+  transition: all 0.3s ease;
+  color: #2A1A80;
+}
 .footer .container .socials__side .cont .mail {
   align-items: center;
   display: flex;
@@ -1534,6 +1538,10 @@ a {
 }
 .footer .container .socials__side .cont .mail a {
   color: #FFFFFF;
+}
+.footer .container .socials__side .cont .mail a:hover {
+  transition: all 0.3s ease;
+  color: #2A1A80;
 }
 .footer .container .socials__side p {
   font-size: 1.25rem;
@@ -1578,11 +1586,12 @@ a {
   border-bottom-color: rgb(150, 143, 143);
   background: transparent;
   outline: none;
-  color: #000000;
+  color: #fff;
   font-size: 1.125rem;
 }
 .footer .right__side .form__side-footer .field textarea {
   max-width: 100%;
+  color: #fff;
 }
 .footer .right__side .form__side-footer .field label {
   color: rgb(150, 143, 143);
@@ -1609,6 +1618,7 @@ a {
   flex-direction: row;
   align-items: center;
   gap: 220px;
+  margin-top: 150px;
 }
 .footer .right__side .contacts .social {
   display: flex;
